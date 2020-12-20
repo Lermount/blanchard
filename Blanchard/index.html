@@ -6,19 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blanchard художественная галерея</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
-    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <!--Swiper-->
+    <link rel="stylesheet" href="swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <script src="swiper/swiper-bundle.js"></script>
+    <script src="swiper/swiper-bundle.min.js"></script>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--Animate-->
+    <link rel="stylesheet" href="animate.css/animate.css">
+    <link rel="stylesheet" href="animate.css/animate.min.css">
 
 
 
@@ -28,49 +24,26 @@
 
 <body>
     <header>
-        <div class="header container">
-            <a href="#" class="logo"><img src="img/logo.svg" alt="logo"></a>
+        <div class="header">
+            <a href="#" class="logo"><img src="img/logo.svg" alt="Логотип"></a>
 
             <nav class="nav">
                 <ul class="nav-list">
-                    <a href="#" class="nav-link">О нас</a>
-                    <a href="#" class="nav-link">Галерея</a>
-                    <a href="#" class="nav-link">Каталог</a>
-                    <a href="#" class="nav-link">События</a>
-                    <a href="#" class="nav-link">Издания</a>
-                    <a href="#" class="nav-link">Проекты</a>
-                    <a href="#" class="nav-link">Контакты</a>
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">О нас</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">Галерея</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">Каталог</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">События</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">Издания</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">Проекты</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">Контакты</a></li>
                 </ul>
             </nav>
 
-            <a href="#" class="enter"><img src="img/Vector.svg" alt="profile">Войти</a>
-
-        </div>
-    </header>
-
-    <main>
-        <section class="hero container">
-
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="img/swiper1.jpg" alt="hero-swipe"
-                            class="animate__animated animate__pulse animate__infinite	infinite animate__slower"></div>
-                    <div class="swiper-slide"><img src="img/swiper2.png" alt="hero-swipe"
-                            class="animate__animated animate__pulse animate__infinite	infinite animate__slower"></div>
-                    <div class="swiper-slide"><img src="img/swiper3.png" alt="hero-swipe"
-                            class="animate__animated animate__pulse animate__infinite	infinite animate__slower"></div>
-                </div>
-            </div>
-
-
-
+            <a href="#" class="enter"><img src="img/Vector.svg" alt="Личный кабинет">Войти</a>
             <nav class="hero-nav">
-
                 <ul class="hero-nav-list">
                     <li class="hero-nav-item" tabindex="0">Реализм</li>
-                    <div class="popup" data-simplebar>
+                    <li class="popup" data-simplebar>
                         <ul class="popup-list">
                             <li class="popup-list-item">
                                 <a href="#" class="popup-list-link">Бенедетто ди Биндо Бергоньоне</a>
@@ -96,9 +69,9 @@
                                     Туччи</a>
                             </li>
                         </ul>
-                    </div>
+                    </li>
                     <li class="hero-nav-item" tabindex="0">Импрессионизм</li>
-                    <div class="popup" data-simplebar>
+                    <li class="popup" data-simplebar>
                         <ul class="popup-list">
                             <li class="popup-list-item">
                                 <a href="#" class="popup-list-link">Веккьетта</a>
@@ -128,9 +101,9 @@
                                 <a href="#" class="popup-list-link">Паоло Джорджоне</a>
                             </li>
                         </ul>
-                    </div>
+                    </li>
                     <li class="hero-nav-item" tabindex="0">Постимпрессионизм</li>
-                    <div class="popup" data-simplebar>
+                    <li class="popup" data-simplebar>
                         <ul class="popup-list">
                             <li class="popup-list-item">
                                 <a href="#" class="popup-list-link">Парентино</a>
@@ -145,9 +118,9 @@
                                 <a href="#" class="popup-list-link">Бальдассаре Пизанелло Пинтуриккьo</a>
                             </li>
                         </ul>
-                    </div>
+                    </li>
                     <li class="hero-nav-item" tabindex="0">Авангард</li>
-                    <div class="popup" data-simplebar>
+                    <li class="popup" data-simplebar>
                         <ul class="popup-list">
                             <li class="popup-list-item">
                                 <a href="#" class="popup-list-link">Веккьетта</a>
@@ -174,9 +147,9 @@
                                 <a href="#" class="popup-list-link">Бальдассаре Пизанелло Пинтуриккьо</a>
                             </li>
                         </ul>
-                    </div>
+                    </li>
                     <li class="hero-nav-item" tabindex="0">Футуризм</li>
-                    <div class="popup" data-simplebar>
+                    <li class="popup" data-simplebar>
                         <ul class="popup-list">
                             <li class="popup-list-item">
                                 <a href="#" class="popup-list-link">Джованни Бонсиньори</a>
@@ -203,23 +176,44 @@
                                 <a href="#" class="popup-list-link">Беноццо Гоццоли</a>
                             </li>
                         </ul>
-                    </div>
+                    </li>
                 </ul>
 
                 <div class="search">
-                    <img src="img/search.svg" alt="search"> <input type="search" class="search-input"
+                    <img src="img/search.svg" alt="Поиск"> <input type="search" class="search-input"
                         placeholder="Поиск по сайту">
                 </div>
             </nav>
+        </div>
 
 
-            <div class="hero-info">
-                <h1 class="hero-info-title">Прикоснитесь к прекрасному</h1>
-                <p class="hero-info-description">Мы вынуждены отталкиваться от того, что реализация намеченных
-                    плановых
-                    заданий создаёт предпосылки для новых предложений.</p>
-                <a href="#" class="hero-btn">Подписаться на рассылку</a>
+    </header>
+
+    <main>
+        <section class="hero container">
+
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/swiper1.jpg" alt="Слайдер 1"
+                            class="animate__animated animate__pulse animate__infinite infinite"></div>
+                    <div class="swiper-slide"><img src="img/swiper2.png" alt="Слайдер 2"
+                            class="animate__animated animate__pulse animate__infinite infinite"></div>
+                    <div class="swiper-slide"><img src="img/swiper3.png" alt="Слайдер 3"
+                            class="animate__animated animate__pulse animate__infinite infinite"></div>
+                </div>
             </div>
+
+                <div class="hero-info">
+                    <h2 class="hero-info-title">Прикоснитесь к прекрасному</h2>
+                    <p class="hero-info-description">Мы вынуждены отталкиваться от того, что реализация намеченных
+                        плановых
+                        заданий создаёт предпосылки для новых предложений.</p>
+                    <a href="#" class="hero-btn">Подписаться на рассылку</a>
+                </div>
+
+            
 
 
 
@@ -236,25 +230,32 @@
                 резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции
                 набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
         </section>
+
+        <!-- <section class="gallary container">
+            <h2 class="Title white-title">Галерея</h2>
+            <div class="select">
+                <p class="select-choise">Фильтровать по:</p>
+                <select name="Автор" class="gallary-select">
+                    <option>Автор</option>
+                </select>
+                <select name="Направление" class="gallary-select">
+                    <option>Направление</option>
+                </select>
+                <select name="Техника" class="gallary-select">
+                    <option>Техника</option>
+                </select>
+
+                <p class="gallary-free">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний                   <a href="#" class="gallary-login">авторизуйтесь</a> , либо воспользуйтесь лицензией. </p>
+            </div>
+
+        </section>-->
     </main>
 
     <footer>
 
     </footer>
 
-    <script>
-        var mySwiper = new Swiper('.swiper-container', {
-            // Optional parameters
-            loop: true,
-            autoplay: {
-                delay: 5000,
-                 disableOnInteraction: false,
-            },
-           
-
-        });
-    </script>
-
+    <script src="index.js"></script>
 </body>
 
 </html>
