@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="animate.css/animate.css">
     <link rel="stylesheet" href="animate.css/animate.min.css">
 
+    <!--SimpleBar-->
+    <link rel="stylesheet" href="simplebar/simplebar.css">
+    <script src="simplebar/simplebar.min.js"></script>
 
 
     <link rel="stylesheet" href="styles/normalize.css">
@@ -24,7 +27,7 @@
 
 <body>
     <header>
-        <div class="header">
+        <div class="header container">
             <a href="#" class="logo"><img src="img/logo.svg" alt="Логотип"></a>
 
             <nav class="nav">
@@ -38,13 +41,15 @@
                     <li class="nav-list-item"><a href="#" class="nav-list-link">Контакты</a></li>
                 </ul>
             </nav>
-
             <a href="#" class="enter"><img src="img/Vector.svg" alt="Личный кабинет">Войти</a>
-            <nav class="hero-nav">
+        </div>
+
+        <div class="under-header">
+            <nav class="hero-nav container">
                 <ul class="hero-nav-list">
                     <li class="hero-nav-item" tabindex="0">Реализм</li>
-                    <li class="popup" data-simplebar>
-                        <ul class="popup-list">
+                    <li class="popup">
+                        <ul class="popup-list" >
                             <li class="popup-list-item">
                                 <a href="#" class="popup-list-link">Бенедетто ди Биндо Бергоньоне</a>
                             </li>
@@ -71,7 +76,7 @@
                         </ul>
                     </li>
                     <li class="hero-nav-item" tabindex="0">Импрессионизм</li>
-                    <li class="popup" data-simplebar>
+                    <li class="popup">
                         <ul class="popup-list">
                             <li class="popup-list-item">
                                 <a href="#" class="popup-list-link">Веккьетта</a>
@@ -103,7 +108,7 @@
                         </ul>
                     </li>
                     <li class="hero-nav-item" tabindex="0">Постимпрессионизм</li>
-                    <li class="popup" data-simplebar>
+                    <li class="popup">
                         <ul class="popup-list">
                             <li class="popup-list-item">
                                 <a href="#" class="popup-list-link">Парентино</a>
@@ -120,7 +125,7 @@
                         </ul>
                     </li>
                     <li class="hero-nav-item" tabindex="0">Авангард</li>
-                    <li class="popup" data-simplebar>
+                    <li class="popup">
                         <ul class="popup-list">
                             <li class="popup-list-item">
                                 <a href="#" class="popup-list-link">Веккьетта</a>
@@ -149,7 +154,7 @@
                         </ul>
                     </li>
                     <li class="hero-nav-item" tabindex="0">Футуризм</li>
-                    <li class="popup" data-simplebar>
+                    <li class="popup" id="bar">
                         <ul class="popup-list">
                             <li class="popup-list-item">
                                 <a href="#" class="popup-list-link">Джованни Бонсиньори</a>
@@ -180,11 +185,12 @@
                 </ul>
 
                 <div class="search">
-                    <img src="img/search.svg" alt="Поиск"> <input type="search" class="search-input"
+                    <button class="search-btn"></button> <input type="search" class="search-input"
                         placeholder="Поиск по сайту">
                 </div>
             </nav>
         </div>
+
 
 
     </header>
@@ -205,15 +211,15 @@
                 </div>
             </div>
 
-                <div class="hero-info">
-                    <h2 class="hero-info-title">Прикоснитесь к прекрасному</h2>
-                    <p class="hero-info-description">Мы вынуждены отталкиваться от того, что реализация намеченных
-                        плановых
-                        заданий создаёт предпосылки для новых предложений.</p>
-                    <a href="#" class="hero-btn">Подписаться на рассылку</a>
-                </div>
+            <div class="hero-info">
+                <h2 class="hero-info-title">Прикоснитесь к прекрасному</h2>
+                <p class="hero-info-description">Мы вынуждены отталкиваться от того, что реализация намеченных
+                    плановых
+                    заданий создаёт предпосылки для новых предложений.</p>
+                <a href="#" class="hero-btn">Подписаться на рассылку</a>
+            </div>
 
-            
+
 
 
 
