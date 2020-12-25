@@ -176,11 +176,13 @@ ul {
 }
 
 .hero-nav-item {
-    position: relative;
-    font-family: 'Regular';
+    margin-top: 14px;
+    margin-bottom: 14px;
     font-weight: 400;       
     font-size: 18px;
     line-height: 39px;
+    position: relative;
+    font-family: 'Regular';
     cursor: pointer;
     text-align: center;
     color: var(--text);
@@ -442,7 +444,7 @@ ul {
 
 .hero-info-title{
     margin-top: 72px;
-    margin-bottom: 17px;
+    margin-bottom: 22px;
     max-width: 597px;
     font-family: 'Bold';
     font-weight: 700;
