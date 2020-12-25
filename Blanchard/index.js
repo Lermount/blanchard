@@ -12,4 +12,12 @@ var mySwiper = new Swiper('.swiper-container', {
 
 });
 
-new SimpleBar(document.getElementById('bar'));
+new SimpleBar(document.getElementById('realizm'));
+
+new SimpleBar(document.getElementById('impresion'));
+
+new SimpleBar(document.getElementById('postmodern'));
+
+new SimpleBar(document.getElementById('avangard'));
+
+new SimpleBar(document.getElementById('future'));

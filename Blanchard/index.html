@@ -27,172 +27,82 @@
 
 <body>
     <header>
-        <div class="header container">
-            <a href="#" class="logo"><img src="img/logo.svg" alt="Логотип"></a>
+        <div class="all-side">
+            <div class="header container">
+                <a href="#" class="logo"><img src="img/logo.svg" alt="Логотип"></a>
 
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">О нас</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Галерея</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Каталог</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">События</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Издания</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Проекты</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Контакты</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="enter"><img src="img/Vector.svg" alt="Личный кабинет">Войти</a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a href="#" class="nav-list-link">О нас</a></li>
+                        <li class="nav-list-item"><a href="#" class="nav-list-link">Галерея</a></li>
+                        <li class="nav-list-item"><a href="#" class="nav-list-link">Каталог</a></li>
+                        <li class="nav-list-item"><a href="#" class="nav-list-link">События</a></li>
+                        <li class="nav-list-item"><a href="#" class="nav-list-link">Издания</a></li>
+                        <li class="nav-list-item"><a href="#" class="nav-list-link">Проекты</a></li>
+                        <li class="nav-list-item"><a href="#" class="nav-list-link">Контакты</a></li>
+                    </ul>
+
+                </nav>
+                <a href="#" class="enter">Войти</a>
+
+
+            </div>
+
+            <div class="under-header">
+                <nav class="hero-nav container">
+                    <div class="hero-nav-list">
+                        <div class="hero-nav-item" tabindex="0">Реализм</div>
+                        <ul class="popup realizm" id="realizm">
+                            <li class="popup-item tin"><a href="#" class="popup-link">Тинторетто</a></li>
+                            <li class="popup-item fri"><a href="#" class="popup-link">Фридрих</a></li>
+                            <li class="popup-item leo"><a href="#" class="popup-link">Леонардо</a></li>
+                            <li class="popup-item ver"><a href="#" class="popup-link">Верроккьо</a></li>
+
+                        </ul>
+
+
+                        <div class="hero-nav-item" tabindex="0">Импрессионизм</div>
+                        <ul class="popup impresion" id="impresion">
+                            <li class="popup-item mon"><a href="#" class="popup-link">Моне</a></li>
+                            <li class="popup-item sis"><a href="#" class="popup-link">Сислей</a></li>
+                            <li class="popup-item man"><a href="#" class="popup-link">Мане</a></li>
+                            <li class="popup-item ren"><a href="#" class="popup-link">Ренуар</a></li>
+                        </ul>
+
+
+                        <div class="hero-nav-item" tabindex="0">Постимпрессионизм</div>
+                        <ul class="popup postmodern" id="postmodern">
+                            <li class="popup-item vangog"><a href="#" class="popup-link">Ван Гог</a></li>
+                            <li class="popup-item sez"><a href="#" class="popup-link">Сезанн</a></li>
+                            <li class="popup-item gogen"><a href="#" class="popup-link">Гоген</a></li>
+                            <li class="popup-item sera"><a href="#" class="popup-link">Сёра</a></li>
+                        </ul>
+
+                        <div class="hero-nav-item" tabindex="0">Авангард</div>
+                        <ul class="popup avangard" id="avangard">
+                            <li class="popup-item kan"><a href="#" class="popup-link">Кандинский</a></li>
+                            <li class="popup-item mar"><a href="#" class="popup-link">Маринетти</a></li>
+                            <li class="popup-item mal"><a href="#" class="popup-link">Малевич</a></li>
+                            <li class="popup-item pik"><a href="#" class="popup-link">Пикассо</a></li>
+                        </ul>
+
+
+                        <div class="hero-nav-item" tabindex="0">Футуризм</div>
+                        <ul class="popup future" id="future">
+                            <li class="popup-item karra"><a href="#" class="popup-link">Карра</a></li>
+                            <li class="popup-item prat"><a href="#" class="popup-link">Прателла</a></li>
+                            <li class="popup-item sever"><a href="#" class="popup-link">Северини</a></li>
+                            <li class="popup-item balla"><a href="#" class="popup-link">Балла</a></li>
+                        </ul>
+                    </div>
+
+                    <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="search">
+                        <button class="search-btn" type="submit"></button> <input type="search" class="search-input"
+                            placeholder="Поиск по сайту">
+                    </form>
+                </nav>
+            </div>
         </div>
-
-        <div class="under-header">
-            <nav class="hero-nav container">
-                <ul class="hero-nav-list">
-                    <li class="hero-nav-item" tabindex="0">Реализм</li>
-                    <li class="popup">
-                        <ul class="popup-list" >
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Бенедетто ди Биндо Бергоньоне</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Амброджо Биссоло</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Франческо Больтраффио</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link"> Джованни Бонсиньори</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Франческо Боттичини</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Рафаэлло Брамантино
-                                    Бреа</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Людовико Бьяджо д’Антонио
-                                    Туччи</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="hero-nav-item" tabindex="0">Импрессионизм</li>
-                    <li class="popup">
-                        <ul class="popup-list">
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Веккьетта</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Андреа Верроккьо</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Доменико Гирландайо</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Беноццо Гоццоли</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Граначчи</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Франческо Грегорио ди Чекко</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Джованни да Удине</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Джованни ди Паоло</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Паоло Джорджоне</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="hero-nav-item" tabindex="0">Постимпрессионизм</li>
-                    <li class="popup">
-                        <ul class="popup-list">
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Парентино</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Бернардо Пезеллино</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Пьетро Перуджино Перуцци</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Бальдассаре Пизанелло Пинтуриккьo</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="hero-nav-item" tabindex="0">Авангард</li>
-                    <li class="popup">
-                        <ul class="popup-list">
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Веккьетта</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Андреа Верроккьо</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Доменико Гирландайо</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Беноццо Гоццоли</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Граначчи</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Бернардо Пезеллино</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Пьетро Перуджино Перуцци</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Бальдассаре Пизанелло Пинтуриккьо</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="hero-nav-item" tabindex="0">Футуризм</li>
-                    <li class="popup" id="bar">
-                        <ul class="popup-list">
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Джованни Бонсиньори</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Франческо Боттичини</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link"> Рафаэлло Брамантино Бреа</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Людовико Бьяджо’Антонио Туччи</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Веккьетта</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Андреа Верроккьо</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Доменико Гирландайо</a>
-                            </li>
-                            <li class="popup-list-item">
-                                <a href="#" class="popup-list-link">Беноццо Гоццоли</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <div class="search">
-                    <button class="search-btn"></button> <input type="search" class="search-input"
-                        placeholder="Поиск по сайту">
-                </div>
-            </nav>
-        </div>
-
-
-
     </header>
 
     <main>
