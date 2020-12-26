@@ -318,18 +318,26 @@ ul {
 
 .tin{
     background-image: url('../img/tinback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .fri{
     background-image: url('../img/friback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .leo{
     background-image: url('../img/leoback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .ver{
     background-image: url('../img/verback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .impresion{
@@ -338,18 +346,26 @@ ul {
 
 .mon{
     background-image: url('../img/monback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .sis{
     background-image: url('../img/sisback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .man{
     background-image: url('../img/manback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .ren{
     background-image: url('../img/renback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .postmodern{
@@ -358,19 +374,27 @@ ul {
 
 .vangog{
     background-image: url('../img/vangogback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .sez{
     background-image: url('../img/sezback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gogen{
     background-image: url('../img/gogenback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .sera{
 
     background-image: url('../img/seraback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .avangard{
@@ -379,18 +403,26 @@ ul {
 
 .kan{
     background-image: url('../img/kanback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .mar{
     background-image: url('../img/marback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .mal{
     background-image: url('../img/malback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .pik{
     background-image: url('../img/pikback.png');    
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .future{
@@ -399,18 +431,26 @@ ul {
 
 .karra{
     background-image: url('../img/karraback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .prat{
     background-image: url('../img/pratback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .sever{
     background-image: url('../img/seraback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .balla{
     background-image: url('../img/ballaback.png');   
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
