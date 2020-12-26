@@ -1,5 +1,4 @@
 
-
 var mySwiper = new Swiper('.swiper-container', {
     loop: true,
     spaceBetween: 50,

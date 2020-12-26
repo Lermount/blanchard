@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Bold';
+    font-family: 'Open Sans Bold';
     src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
          url('../fonts/opensans-bold-webfont.woff') format('woff');
     font-weight: 700;
@@ -8,7 +8,7 @@
 
 
 @font-face {
-    font-family: 'Regular';
+    font-family: 'Open Sans Regular';
     src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
          url('../fonts/opensans-regular-webfont.woff') format('woff');
     font-weight: 400;
@@ -17,7 +17,7 @@
 
 
 @font-face {
-    font-family: 'Semi-bold';
+    font-family: 'Open Sans Semi-bold';
     src: url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
          url('../fonts/opensans-semibold-webfont.woff') format('woff');
     font-weight: 600;
@@ -59,6 +59,7 @@ ul {
 .enter:hover,
 .hero-nav-item:hover {
     color: #C283F3;
+    transition: color .3s;
    
 }
 
@@ -66,6 +67,7 @@ ul {
 .enter:focus,
 .hero-nav-item:focus{
     outline: 2px solid var(--focus);
+    transition: outline .3s;
 }
 
 .nav-list-link:active,
@@ -73,6 +75,7 @@ ul {
 .hero-nav-item:active{
     outline: none;
     color:var(--focus);
+    transition: color .3s;
 }
 
 /*Header*/
@@ -89,12 +92,10 @@ ul {
     padding-bottom: 29px;
 }
 
-.logo{
-    flex: 1 1 10%;
-}
-
 .nav {
+    margin-right: 120px;
     display: flex;
+
 }
 
 .nav-list {
@@ -106,7 +107,7 @@ ul {
 }
 
 .nav-list-item {
-    font-family: 'Semi-bold';
+    font-family: 'Open Sans Semi-bold';
     font-weight: 600;
     font-size: 18px;
     line-height: 24.51px;
@@ -121,13 +122,11 @@ ul {
 }
 
 .enter {
-    margin-top: 10px;
-    flex: 1 1 10%;
-    font-family: 'Semi-bold';
+    align-self: center;
+    font-family: 'Open Sans Semi-bold';
     font-weight: 600;
     font-size: 17px;
     line-height: 25px;
-    text-align: right;
     color: var(--text);
     position: relative;
 }
@@ -136,8 +135,8 @@ ul {
     content: url('../img/Vector.svg');
     position: absolute;
     top: 0;
-    left: 0;
-    right: 17%;
+    left: -37%;
+    right: 0;
     bottom: 0;
 }
 
@@ -145,8 +144,8 @@ ul {
     content: url('../img/Vector-hover.svg');
     position: absolute;
     top: 0;
-    left: 0;
-    right: 17%;
+    left: -40%;
+    right: 0;
     bottom: 0;
 }
 
@@ -154,8 +153,8 @@ ul {
     content: url('../img/Vector-active.svg');
     position: absolute;
     top: 0;
-    left: 0;
-    right: 17%;
+    left: -37%;
+    right: 0;
     bottom: 0;
 }
 
@@ -176,13 +175,11 @@ ul {
 }
 
 .hero-nav-item {
-    margin-top: 14px;
-    margin-bottom: 14px;
     font-weight: 400;       
     font-size: 18px;
     line-height: 39px;
     position: relative;
-    font-family: 'Regular';
+    font-family: 'Open Sans Regular';
     cursor: pointer;
     text-align: center;
     color: var(--text);
@@ -249,15 +246,17 @@ ul {
 
 .search-btn:hover{
     background-image: url('../img/search-hover.svg');
+    transition:  background .3s;
 }
 
 .search-input:hover{
     border-bottom: 1px solid var(--main);
+    transition: border .3s;
 }
 
 
 .search-input::placeholder{
-    font-family: 'Regular';
+    font-family: 'Open Sans Regular';
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
@@ -267,16 +266,17 @@ ul {
 /*Всплывашки*/
 
 .popup{
-    padding-top: 37.07px;
-    padding-bottom: 37.07px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     width: 330px;
     height: 250px;
     position: absolute;
-    top:75.5%;
+    top:100%;
     left: 0;
     background: rgba(0, 0,0,40%);
     opacity: 0;
     transition: opacity .5s ease-in-out;  
+    overflow: auto;
 }
 
 .popup-item{
@@ -295,7 +295,7 @@ ul {
 .popup-link{
     width: 251.6px;
     height: 370.7px;
-    font-family: 'Semi-bold';
+    font-family: 'Open Sans Semi-bold';
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
@@ -309,6 +309,7 @@ ul {
 .popup-item:active{
     background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(.jpg);
     border: 2px solid #D1A9F0;
+
 }
 
 .realizm{
@@ -419,10 +420,10 @@ ul {
 }
 
 
-  .simplebar-scrollbar::before {
+.simplebar-scrollbar::before {
     background-color: var(--text);
     
-  }
+}
 
 /*Hero*/
 
@@ -444,9 +445,9 @@ ul {
 
 .hero-info-title{
     margin-top: 72px;
-    margin-bottom: 22px;
+    margin-bottom: 17px;
     max-width: 597px;
-    font-family: 'Bold';
+    font-family: 'Open Sans Bold';
     font-weight: 700;
     font-size: 72px;
     line-height: 82.8px;
@@ -456,7 +457,7 @@ ul {
 .hero-info-description {
     margin-bottom: 115px;
     max-width: 579px;
-    font-family: 'Bold';
+    font-family: 'Open Sans Bold';
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
@@ -467,7 +468,7 @@ ul {
     padding: 22px 36px;
     background-color: var(--main);
     border-radius: 100px;
-    font-family: 'Bold';
+    font-family: 'Open Sans Bold';
     font-weight: 700;
     font-size: 18px;
     line-height: 24.51px;
@@ -478,6 +479,7 @@ ul {
 .hero-btn:hover,
 .hero-btn:focus {
     border:  3px solid #D1A9F0;
+    transition: border .3s;
 }
 .hero-btn:active{
     outline: none;
@@ -492,7 +494,7 @@ ul {
 
 .Title{
     margin-bottom: 16px;
-    font-family: 'Regular';
+    font-family: 'Open Sans Regular';
     font-weight: 400;
     font-size: 48px;
     line-height: 65px;
@@ -501,7 +503,7 @@ ul {
 
 .about-description {
     max-width: 1080px;
-    font-family: 'Regular';
+    font-family: 'Open Sans Regular';
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
