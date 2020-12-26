@@ -276,7 +276,7 @@ ul {
     background: rgba(0, 0,0,40%);
     opacity: 0;
     transition: opacity .5s ease-in-out;  
-    overflow: auto;
+    overflow: hidden;
 }
 
 .popup-item{
