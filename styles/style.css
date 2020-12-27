@@ -52,20 +52,26 @@ ul {
     --animate-duration: 10s;
    --text:#FFFFFF;
    --main:#9D5CD0;
+   --hover:#C283F3;
    --focus:#7943A4;
 }
 
 .nav-list-link:hover,
-.enter:hover,
-.hero-nav-item:hover {
-    color: #C283F3;
+.enter:hover {
+    color: var(--hover);
     transition: color .3s;
    
 }
 
+.hero-nav-item:hover{
+    color: var(--main);
+    transition: color .3s;
+}
+
 .nav-list-link:focus,
 .enter:focus,
-.hero-nav-item:focus{
+.hero-nav-item:focus,
+.search:focus{
     outline: 2px solid var(--focus);
     transition: outline .3s;
 }
@@ -123,8 +129,8 @@ ul {
 
 .enter {
     align-self: center;
-    font-family: 'Open Sans Semi-bold';
-    font-weight: 600;
+    font-family: 'Open Sans Regular';
+    font-weight: 400;
     font-size: 17px;
     line-height: 25px;
     color: var(--text);
@@ -135,7 +141,7 @@ ul {
     content: url('../img/Vector.svg');
     position: absolute;
     top: 0;
-    left: -37%;
+    left: -44%;
     right: 0;
     bottom: 0;
 }
@@ -144,7 +150,7 @@ ul {
     content: url('../img/Vector-hover.svg');
     position: absolute;
     top: 0;
-    left: -40%;
+    left: -50%;
     right: 0;
     bottom: 0;
 }
@@ -153,7 +159,7 @@ ul {
     content: url('../img/Vector-active.svg');
     position: absolute;
     top: 0;
-    left: -37%;
+    left: -50%;
     right: 0;
     bottom: 0;
 }
@@ -214,7 +220,7 @@ ul {
 }
 
 .search {
-    margin-top: 4px;
+
     flex: 1 1 50%;
     justify-content: flex-end;
     align-items: center;
@@ -222,7 +228,7 @@ ul {
 }
 
 .search-btn{
-    margin-right: 7px;
+    margin-right: 9px;
     border: none;
     background: none;
     background-image: url('../img/search.svg');
@@ -231,7 +237,7 @@ ul {
 }
 
 .search-input{
-    padding-right: 25px;
+    padding-right: 22px;
     position: relative;
     background: none;
     border: none;
@@ -250,7 +256,7 @@ ul {
 }
 
 .search-input:hover{
-    border-bottom: 1px solid var(--main);
+    border-bottom: 1px solid var(--hover);
     transition: border .3s;
 }
 
@@ -265,6 +271,7 @@ ul {
 
 /*Всплывашки*/
 
+
 .popup{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -276,7 +283,7 @@ ul {
     background: rgba(0, 0,0,40%);
     opacity: 0;
     transition: opacity .5s ease-in-out;  
-    overflow: hidden;
+    overflow: auto;
 }
 
 .popup-item{
@@ -478,6 +485,24 @@ ul {
     height: 701px;
 }
 
+.first-slide {
+    background-image: url('../img/swiper1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.second-slide{
+    background-image: url('../img/swiper2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.third-slide{
+    background-image: url('../img/swiper3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .hero-info{
   position: relative;
    
@@ -505,7 +530,7 @@ ul {
 }
 
 .hero-btn{
-    padding: 22px 36px;
+    padding: 20px 32px;
     background-color: var(--main);
     border-radius: 100px;
     font-family: 'Open Sans Bold';
@@ -514,6 +539,7 @@ ul {
     line-height: 24.51px;
     text-align: center; 
     color: var(--text);
+    border: 3px solid var(--main);
 }
 
 .hero-btn:hover,
@@ -523,7 +549,10 @@ ul {
 }
 .hero-btn:active{
     outline: none;
-    border:3px solid #7943A4;
+    border:3px solid #D1A9F0;
+
+    background-color: #7943A4;
+    ;
 }
 
 /*About*/
