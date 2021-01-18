@@ -19,7 +19,7 @@
     <!--SimpleBar-->
     <link rel="stylesheet" href="scroll/simplebar.css">
     <script src="scroll/simplebar.min.js"></script>
-    
+
 
 
 
@@ -34,7 +34,38 @@
     <header>
         <div class="all-side">
             <div class="header container">
-                <a href="#" class="logo"><img src="img/logo.svg" alt="Логотип"></a>
+                <div class="burger" id="burger"></div>
+                <div class="menu is-active" id="menu">
+                    <ul class="burger-list closer" id="closer">
+                        <li class="burger-item"><a href="#" class="burger-link" aria-label="Ссылка О наc">О нас</a></li>
+                        <li class="burger-item"><a href="#" class="burger-link" aria-label="Ссылка Галерея">Галерея</a>
+                        </li>
+                        <li class="burger-item"><a href="#" class="burger-link" aria-label="Ссылка Каталог">Каталог</a>
+                        </li>
+                        <li class="burger-item"><a href="#" class="burger-link" aria-label="Ссылка События">События</a>
+                        </li>
+                        <li class="burger-item"><a href="#" class="burger-link" aria-label="Ссылка Издания">Издания</a>
+                        </li>
+                        <li class="burger-item"><a href="#" class="burger-link" aria-label="Ссылка Проекты">Проекты</a>
+                        </li>
+                        <li class="burger-item"><a href="#" class="burger-link"
+                                aria-label="Ссылка Контакты">Контакты</a></li>
+                    </ul>
+                    <a href="#" class="enter enter-active">Войти</a>
+                </div>
+
+                <a href="#" class="logo" id="logo"><img src="img/logo.svg" alt="Логотип" class="logo-img"></a>
+
+
+                <button type="submit" onmousedown="viewSearch()" onmouseup="closeSearch()" class="search-adaptive"
+                    form="search" id="search-btn"></button>
+                <form action="https://jsonplaceholder.typicode.com/posts" method="POST"
+                    class="search form-search-adaptive" id="search">
+                    <button type="submit" form="search" class="search-adaptive-mobile"></button>
+                    <input type="search" class="search-input search-input-adaptive">
+                    <div class="input-adaptive-close" onmousedown="closeSearch()"></div>
+                </form>
+
 
                 <nav class="nav">
                     <ul class="nav-list">
@@ -126,9 +157,12 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide first-slide animate__animated animate__pulse animate__infinite infinite"></div>
-                    <div class="swiper-slide second-slide animate__animated animate__pulse animate__infinite infinite"></div>
-                    <div class="swiper-slide third-slide animate__animated animate__pulse animate__infinite infinite"></div>
+                    <div class="swiper-slide first-slide animate__animated animate__pulse animate__infinite infinite">
+                    </div>
+                    <div class="swiper-slide second-slide animate__animated animate__pulse animate__infinite infinite">
+                    </div>
+                    <div class="swiper-slide third-slide animate__animated animate__pulse animate__infinite infinite">
+                    </div>
                 </div>
             </div>
 
@@ -158,24 +192,7 @@
                 набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
         </section>
 
-        <!-- <section class="gallary container">
-            <h2 class="Title white-title">Галерея</h2>
-            <div class="select">
-                <p class="select-choise">Фильтровать по:</p>
-                <select name="Автор" class="gallary-select">
-                    <option>Автор</option>
-                </select>
-                <select name="Направление" class="gallary-select">
-                    <option>Направление</option>
-                </select>
-                <select name="Техника" class="gallary-select">
-                    <option>Техника</option>
-                </select>
 
-                <p class="gallary-free">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний                   <a href="#" class="gallary-login">авторизуйтесь</a> , либо воспользуйтесь лицензией. </p>
-            </div>
-
-        </section>-->
     </main>
 
     <footer>
