@@ -182,7 +182,8 @@ ul {
 
 .under-header{
     background:rgba(0, 0, 0, 40%); 
-    position: relative;
+    position: absolute;
+    width: 100%;
     z-index: 1;
 }
 
@@ -190,26 +191,34 @@ ul {
     display: flex;
 }
 
-.hero-nav-list{
-    padding: 0;
+.under-hero-nav {
+     padding: 0;
     display: flex;
     flex: 1 1 50%;
 }
+
+.hero-nav-list{
+   position: relative;
+   margin-top: 14px;
+   margin-bottom: 17px;
+}
+
+.hero-nav-list:not(:last-child){
+    margin-right: 113px;
+}
+
 
 .hero-nav-item {
     font-weight: 400;       
     font-size: 18px;
     line-height: 39px;
-    position: relative;
     font-family: 'Open Sans Regular';
     cursor: pointer;
     text-align: center;
     color: var(--text);
 }
 
-.hero-nav-item:not(:last-child){
-    margin-right: 113px;
-}
+
 
 .hero-nav-item::after{
     content: url('../img/arrow-hero.svg');
@@ -307,8 +316,10 @@ ul {
     width: 330px;
     height: 250px;
     position: absolute;
-    top:100%;
+    top:40px;
     left: 0;
+    right: 0;
+    bottom: 0;
     background: rgba(0, 0,0,40%);
     opacity: 0;
     transition: opacity .5s ease-in-out;  
@@ -321,7 +332,6 @@ ul {
     width: 251.6px;
     height: 37.7px;
     text-align: left;
-    cursor: pointer;
 }
 
 .popup-item:not(:last-child){
@@ -329,8 +339,6 @@ ul {
 }
 
 .popup-link{
-    width: 251.6px;
-    height: 370.7px;
     font-family: 'Open Sans Semi-bold';
     font-weight: 600;
     font-size: 14px;
@@ -348,9 +356,6 @@ ul {
 
 }
 
-.realizm{
-    left: 160px;
-}
 
 .tin{
     background-image: url('../img/tinback.png');
@@ -376,10 +381,6 @@ ul {
     background-size: cover;
 }
 
-.impresion{
-    left: 339px;
-}
-
 .mon{
     background-image: url('../img/monback.png');
     background-repeat: no-repeat;
@@ -402,10 +403,6 @@ ul {
     background-image: url('../img/renback.png');
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.postmodern{
-    left: 589px;
 }
 
 .vangog{
@@ -433,10 +430,6 @@ ul {
     background-size: cover;
 }
 
-.avangard{
-    left: 890px;
-}
-
 .kan{
     background-image: url('../img/kanback.png');
     background-repeat: no-repeat;
@@ -461,9 +454,6 @@ ul {
     background-size: cover;
 }
 
-.future{
-    left:1094px;
-}
 
 .karra{
     background-image: url('../img/karraback.png');
@@ -489,10 +479,8 @@ ul {
     background-size: cover;
 }
 
-
-
-.hero-nav-item:focus + .popup{
-    opacity: 1;
+.hero-nav-item:focus + .popup {
+   opacity: 1;
 }
 
 
@@ -503,16 +491,21 @@ ul {
 
 /*Hero*/
 
+.hero {
+    position: relative;
+    z-index: 0;
+}
+
 .swiper-container {
     position: absolute;
-    max-width: 100%;
-    top:103px;
+    width: 100%;
+    top:0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 0;
-    height: 701px;
+    z-index: -1;
 }
+
 
 .first-slide {
     background-image: url('../img/swiper1.jpg');
@@ -532,14 +525,13 @@ ul {
     background-size: cover;
 }
 
-.hero-info{
-  position: relative;
-   
+.hero-info {
+    padding-top: 140px;
+    padding-bottom: 147px;
 }
 
 .hero-info-title{
-    margin-top: 72px;
-    margin-bottom: 17px;
+    margin: 0;
     max-width: 597px;
     font-family: 'Open Sans Bold';
     font-weight: 700;
@@ -579,14 +571,12 @@ ul {
 .hero-btn:active{
     outline: none;
     border:3px solid #D1A9F0;
-
     background-color: #7943A4;
-    ;
 }
 
 /*About*/
 .about{
-    margin-top: 226px;
+    margin-top: 80px;
     margin-bottom: 80px;
 }
 
@@ -618,10 +608,6 @@ ul {
 
     .nav-list-item:not(:last-child) {
         margin-right: 30px;
-    }
-
-    .swiper-container{
-        top: 100px;
     }
 }
 
@@ -667,7 +653,7 @@ ul {
     }
 
     .menu {
-        display: inline;
+        display: none;
         position: absolute;
         z-index: 10;
         top: 0;
@@ -676,19 +662,15 @@ ul {
         width: 100%;
         height: 768px;
         background-color: rgba(0,0,0, 90%);
-        transition: transform .3s ease-in-out;
-        transform: translateY(-101%)
-        
+
     }
 
-    .is-active{
-        transform:none;
-    }
 
     .closer{
         background-image: url('../img/burger-closer.svg');
         background-repeat: no-repeat;
         width: 29px;
+        cursor: pointer;
     }
 
     .burger-list {
@@ -760,14 +742,13 @@ ul {
         margin-top: 20px; 
     }
 
-    .swiper-container{
-        top: 99px;
-        height: 668px;
+    .hero-info {
+        padding-top: 117px;
+        padding-bottom: 137px;
     }
 
     .hero-info-title{
-        margin-top: 115px;
-        margin-bottom: 13px;
+        margin-bottom: 12px;
     }
 
     .hero-info-description{
@@ -775,17 +756,12 @@ ul {
         line-height: 29px;
         margin-left: 3px;
         margin-top: 0;
-        margin-bottom: 157px;
+        margin-bottom: 158px;
     }
 
     .hero-btn{
         margin-left: 3px;
         padding: 20px 33px;
-    }
-
-    .about{
-        margin-top: 218px;
-        margin-bottom: 70px;
     }
 
     .about-description{
@@ -796,7 +772,7 @@ ul {
 
 @media(max-width:768px){
     .container{
-        max-width: 700px;
+        max-width: 710px;
     }
 
     .header{
@@ -808,13 +784,9 @@ ul {
         margin-right: 0;
     }
 
-    .swiper-container{
-        top: 99px;
-    }
-
     .form-search-adaptive{
         margin: 0 auto;
-        width: 90%;
+        width: 80%;
     }
 
     .search-input-adaptive{
@@ -829,6 +801,23 @@ ul {
         min-width: 30px;
         height: 30px;
         cursor: pointer;
+    }
+
+    .hero-info {
+        padding-top: 115px;
+    }
+
+    .hero-info-description {
+        margin-left: 4px;
+    }
+
+    .hero-btn {
+        margin-left: 7px;
+    }
+
+    .about {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -864,7 +853,8 @@ ul {
     
     .container{
         max-width: 305px;
-        padding: 0;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .header{
@@ -959,22 +949,22 @@ ul {
         margin-left: 40px;
     }
 
-    .swiper-container{
-        top: 45px;
-        height: 310px;
-
+    .hero-info {
+        padding-top: 0px;
+        padding-bottom: 57px;
     }
 
     .hero-info-title {
-        margin-top: 35px;
-        margin-left: 20px;
-        margin-bottom: 11px; 
+        padding-top: 35px;
+        margin-left: 15px;
+        margin-bottom: 10px; 
         font-size: 32px;
         line-height: 37px;
         max-width: 267px;
     }
 
     .hero-info-description {
+        margin-left: 17px;
         font-family: 'Open Sans Regular';
         font-weight: 400;
         font-size: 12px;
@@ -985,14 +975,14 @@ ul {
     }
 
     .hero-btn {
+        margin-left: 2px;
         font-size: 12px;
         line-height: 16px;
         padding: 8px 16px;
     }
 
     .about {
-        margin-top: 92px;
-        padding-left: 7px;
+        margin-top: 37px;
     }
 
     .Title {
@@ -1001,7 +991,8 @@ ul {
     }
 
     .about-description {
-        margin: 0;
+       margin-left: 2px;
+       margin-top: 0px;
         max-width: 290px;
         font-size: 14px;
         line-height: 28px;

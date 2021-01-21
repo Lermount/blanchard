@@ -23,17 +23,13 @@ new SimpleBar(document.getElementById('avangard'));
 new SimpleBar(document.getElementById('future'));
 
 //burger open
-window.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('#burger').addEventListener('click', function() {
-        document.querySelector('#menu').classList.toggle('is-active')
-    })
-})
+function burger(){
+    document.getElementById("menu").style.display = "block";
+}
 //burger close
-window.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('#closer').addEventListener('click', function() {
-        document.querySelector('#menu').classList.toggle('is-active')
-    })
-})
+function closer(){
+    document.getElementById("menu").style.display = "none";
+}
 
 //input-adaptive open
 function viewSearch(){
