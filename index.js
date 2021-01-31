@@ -1,8 +1,7 @@
-//swiper
-var mySwiper = new Swiper('.swiper-container', {
+//swiper-hero
+var mySwiper = new Swiper('.hero-swiper', {
     loop: true,
     spaceBetween: 50,
-    height: 100,
     autoplay: {
         delay: 10000,
         disableOnInteraction: false,
@@ -10,6 +9,54 @@ var mySwiper = new Swiper('.swiper-container', {
 
 
 });
+//swiper-gallary
+var Swiper = new Swiper('.gallary-swiper', {
+    
+    spaceBetween: 50,
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    slidesPerColumn: 2,
+    slidesPerColumnFill: 'row',
+   
+
+    pagination: {
+      el: '.swiper-paginationg',
+      type: 'fraction',
+    },
+
+    navigation: {
+      nextEl: '.galary-swiper-next',
+      prevEl: '.gallary-swiper-prev',
+    },
+
+    breakpoints: {
+       
+        1420: {
+            spaceBetween: 50,
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            slidesPerColumn: 2,
+            slidesPerColumnFill: 'row',
+          
+        },
+
+        351: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 34,
+        },
+
+        320:{
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            slidesPerColumn: 1,
+        }
+        
+    }
+   
+  
+  });
+
 
 //scroll
 new SimpleBar(document.getElementById('realizm'));
@@ -30,6 +77,10 @@ function burger(){
 function closer(){
     document.getElementById("menu").style.display = "none";
 }
+
+element.click(function(burger) {
+    document.getElementById("menu").style.display = "block";
+});
 
 //input-adaptive open
 function viewSearch(){

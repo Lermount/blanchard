@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -36,9 +36,12 @@
             <div class="header container">
                 <div class="burger" id="burger" onmousedown="burger()"></div>
                 <div class="menu is-active" id="menu">
-                    <ul class="burger-list closer" onmousedown="closer()">
-                        <li class="burger-item"><a href="#" class="burger-link" aria-label="Ссылка О наc">О нас</a></li>
-                        <li class="burger-item"><a href="#" class="burger-link" aria-label="Ссылка Галерея">Галерея</a>
+                    <ul class="burger-list">
+                        <li class="closer" onmousedown="closer()"></li>
+                        <li class="burger-item"><a href="#about" class="burger-link" aria-label="Ссылка О наc">О нас</a>
+                        </li>
+                        <li class="burger-item"><a href="#gallary" class="burger-link"
+                                aria-label="Ссылка Галерея">Галерея</a>
                         </li>
                         <li class="burger-item"><a href="#" class="burger-link" aria-label="Ссылка Каталог">Каталог</a>
                         </li>
@@ -69,8 +72,8 @@
 
                 <nav class="nav">
                     <ul class="nav-list">
-                        <li class="nav-list-item"><a href="#" class="nav-list-link">О нас</a></li>
-                        <li class="nav-list-item"><a href="#" class="nav-list-link">Галерея</a></li>
+                        <li class="nav-list-item"><a href="#about" class="nav-list-link">О нас</a></li>
+                        <li class="nav-list-item"><a href="#gallary" class="nav-list-link">Галерея</a></li>
                         <li class="nav-list-item"><a href="#" class="nav-list-link">Каталог</a></li>
                         <li class="nav-list-item"><a href="#" class="nav-list-link">События</a></li>
                         <li class="nav-list-item"><a href="#" class="nav-list-link">Издания</a></li>
@@ -87,57 +90,57 @@
             <div class="under-header">
                 <nav class="hero-nav container">
 
-                 <div class="under-hero-nav">
-                    <div class="hero-nav-list">
-                        <div class="hero-nav-item" tabindex="0">Реализм</div>
-                        <ul class="popup" id="realizm">
-                            <li class="popup-item tin"><a href="#" class="popup-link">Тинторетто</a></li>
-                            <li class="popup-item fri"><a href="#" class="popup-link">Фридрих</a></li>
-                            <li class="popup-item leo"><a href="#" class="popup-link">Леонардо</a></li>
-                            <li class="popup-item ver"><a href="#" class="popup-link">Верроккьо</a></li>
-                        </ul>
-                    </div>
+                    <div class="under-hero-nav">
+                        <div class="hero-nav-list">
+                            <div class="hero-nav-item" tabindex="0">Реализм</div>
+                            <ul class="popup" id="realizm">
+                                <li class="popup-item tin"><a href="#" class="popup-link">Тинторетто</a></li>
+                                <li class="popup-item fri"><a href="#" class="popup-link">Фридрих</a></li>
+                                <li class="popup-item leo"><a href="#" class="popup-link">Леонардо</a></li>
+                                <li class="popup-item ver"><a href="#" class="popup-link">Верроккьо</a></li>
+                            </ul>
+                        </div>
 
-                    <div class="hero-nav-list">
-                        <div class="hero-nav-item" tabindex="0">Импрессионизм</div>
-                        <ul class="popup" id="impresion">
-                            <li class="popup-item mon"><a href="#" class="popup-link">Моне</a></li>
-                            <li class="popup-item sis"><a href="#" class="popup-link">Сислей</a></li>
-                            <li class="popup-item man"><a href="#" class="popup-link">Мане</a></li>
-                            <li class="popup-item ren"><a href="#" class="popup-link">Ренуар</a></li>
-                        </ul>
-                    </div>
+                        <div class="hero-nav-list">
+                            <div class="hero-nav-item" tabindex="0">Импрессионизм</div>
+                            <ul class="popup" id="impresion">
+                                <li class="popup-item mon"><a href="#" class="popup-link">Моне</a></li>
+                                <li class="popup-item sis"><a href="#" class="popup-link">Сислей</a></li>
+                                <li class="popup-item man"><a href="#" class="popup-link">Мане</a></li>
+                                <li class="popup-item ren"><a href="#" class="popup-link">Ренуар</a></li>
+                            </ul>
+                        </div>
 
-                    <div class="hero-nav-list">
-                        <div class="hero-nav-item" tabindex="0">Постимпрессионизм</div>
-                        <ul class="popup" id="postmodern">
-                            <li class="popup-item vangog"><a href="#" class="popup-link">Ван Гог</a></li>
-                            <li class="popup-item sez"><a href="#" class="popup-link">Сезанн</a></li>
-                            <li class="popup-item gogen"><a href="#" class="popup-link">Гоген</a></li>
-                            <li class="popup-item sera"><a href="#" class="popup-link">Сёра</a></li>
-                        </ul>
-                    </div>
+                        <div class="hero-nav-list">
+                            <div class="hero-nav-item" tabindex="0">Постимпрессионизм</div>
+                            <ul class="popup" id="postmodern">
+                                <li class="popup-item vangog"><a href="#" class="popup-link">Ван Гог</a></li>
+                                <li class="popup-item sez"><a href="#" class="popup-link">Сезанн</a></li>
+                                <li class="popup-item gogen"><a href="#" class="popup-link">Гоген</a></li>
+                                <li class="popup-item sera"><a href="#" class="popup-link">Сёра</a></li>
+                            </ul>
+                        </div>
 
-                    <div class="hero-nav-list">
-                        <div class="hero-nav-item" tabindex="0">Авангард</div>
-                        <ul class="popup" id="avangard">
-                            <li class="popup-item kan"><a href="#" class="popup-link">Кандинский</a></li>
-                            <li class="popup-item mar"><a href="#" class="popup-link">Маринетти</a></li>
-                            <li class="popup-item mal"><a href="#" class="popup-link">Малевич</a></li>
-                            <li class="popup-item pik"><a href="#" class="popup-link">Пикассо</a></li>
-                        </ul>
-                    </div>
+                        <div class="hero-nav-list">
+                            <div class="hero-nav-item" tabindex="0">Авангард</div>
+                            <ul class="popup" id="avangard">
+                                <li class="popup-item kan"><a href="#" class="popup-link">Кандинский</a></li>
+                                <li class="popup-item mar"><a href="#" class="popup-link">Маринетти</a></li>
+                                <li class="popup-item mal"><a href="#" class="popup-link">Малевич</a></li>
+                                <li class="popup-item pik"><a href="#" class="popup-link">Пикассо</a></li>
+                            </ul>
+                        </div>
 
-                    <div class="hero-nav-list">
-                        <div class="hero-nav-item" tabindex="0">Футуризм</div>
-                        <ul class="popup" id="future">
-                            <li class="popup-item karra"><a href="#" class="popup-link">Карра</a></li>
-                            <li class="popup-item prat"><a href="#" class="popup-link">Прателла</a></li>
-                            <li class="popup-item sever"><a href="#" class="popup-link">Северини</a></li>
-                            <li class="popup-item balla"><a href="#" class="popup-link">Балла</a></li>
-                        </ul>
+                        <div class="hero-nav-list">
+                            <div class="hero-nav-item" tabindex="0">Футуризм</div>
+                            <ul class="popup" id="future">
+                                <li class="popup-item karra"><a href="#" class="popup-link">Карра</a></li>
+                                <li class="popup-item prat"><a href="#" class="popup-link">Прателла</a></li>
+                                <li class="popup-item sever"><a href="#" class="popup-link">Северини</a></li>
+                                <li class="popup-item balla"><a href="#" class="popup-link">Балла</a></li>
+                            </ul>
+                        </div>
                     </div>
-</div>   
 
 
                     <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="search">
@@ -152,7 +155,7 @@
     <main>
         <section class="hero">
 
-            <div class="swiper-container">
+            <div class="swiper-container hero-swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -172,14 +175,9 @@
                     заданий создаёт предпосылки для новых предложений.</p>
                 <a href="#" class="hero-btn">Подписаться на рассылку</a>
             </div>
-
-
-
-
-
         </section>
 
-        <section class="about container">
+        <section class="about container" id="about">
             <h2 class="Title">О нас</h2>
             <p class="about-description">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
                 однозначно определяет каждого участника как способного принимать собственные решения касаемо
@@ -191,6 +189,73 @@
                 набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
         </section>
 
+        <section class="gallary" id="gallary">
+            <div class="gallary-content container">
+
+                <div class="gallary-content_main">
+
+
+                    <div class="gallary-content-select">
+                        <h2 class="Title white">Галерея</h2>
+                        <p class="gallary-select-title">Фильтровать по:</p>
+                        <select class="gallary-select">
+                            <option>Автор</option>
+                        </select>
+                        <select class="gallary-select">
+                            <option>Направление</option>
+                        </select>
+                        <select class="gallary-select">
+                            <option>Техника</option>
+                        </select>
+
+                        <p class="gallary-select-description">
+                            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества
+                            скачиваний <a href="#" class="gallary-login">авторизуйтесь,</a> либо
+                            воспользуйтесь лицензией.
+                        </p>
+                    </div>
+
+
+
+                    <div class="swiper-container gallary-swiper">
+                        <div class="gallary-nav">
+                            <div class="gallary-swiper-prev"></div>
+                            <div class="swiper-paginationg"></div>
+                            <div class="galary-swiper-next"></div>
+                        </div>
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper gallary-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide gallary-slide gallary-slide-1"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-2"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-3"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-4"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-5"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-6"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-7"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-8"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-9"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-10"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-11"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-12"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-13"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-14"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-15"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-16"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-17"></div>
+                            <div class="swiper-slide gallary-slide gallary-slide-18"></div>
+                        </div>
+                    </div>
+
+                    <p class="gallary-select-description_mobile">
+                        Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества
+                        скачиваний <a href="#" class="gallary-login">авторизуйтесь,</a> либо
+                        воспользуйтесь лицензией.
+                    </p>
+                </div>
+            </div>
+
+        </section>
 
     </main>
 
