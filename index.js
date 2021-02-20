@@ -9,8 +9,8 @@ var mySwiper = new Swiper('.hero-swiper', {
 
 
 });
-//swiper-gallary
-var Swiper = new Swiper('.gallary-swiper', {
+//swiper-gallery
+var Swiper = new Swiper('.gallery-swiper', {
     
     spaceBetween: 50,
     slidesPerView: 3,
@@ -25,8 +25,8 @@ var Swiper = new Swiper('.gallary-swiper', {
     },
 
     navigation: {
-      nextEl: '.galary-swiper-next',
-      prevEl: '.gallary-swiper-prev',
+      nextEl: '.gallery-swiper-next',
+      prevEl: '.gallery-swiper-prev',
     },
 
     breakpoints: {
@@ -114,5 +114,7 @@ function viewSearch(){
     };
 
   };
+
+
 
 
