@@ -1,3 +1,13 @@
+//swiper-events-mobile
+var mSwiper = new Swiper('.events-swiper',{
+    
+    spaceBetween: 50,
+    pagination: {
+        el: '.events-pagination',
+      },
+  
+});
+
 //swiper-hero
 var mySwiper = new Swiper('.hero-swiper', {
     loop: true,
@@ -9,6 +19,7 @@ var mySwiper = new Swiper('.hero-swiper', {
 
 
 });
+
 //swiper-gallery
 var Swiper = new Swiper('.gallery-swiper', {
     
@@ -55,7 +66,7 @@ var Swiper = new Swiper('.gallery-swiper', {
     }
    
   
-  });
+});
 
 
 //scroll
@@ -114,6 +125,17 @@ function viewSearch(){
     };
 
   };
+
+  //events-btn 
+
+  function events(){
+    document.getElementById("card4").style.display = "block";
+    document.getElementById("card5").style.display = "block";
+    if(screen.width <= 935 ){
+        document.getElementById("card3").style.display = "block";
+    }    
+
+}
 
 
 

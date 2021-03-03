@@ -56,6 +56,8 @@ ul {
    --focus:#7943A4;
 }
 
+
+
 .nav-list-link:hover,
 .enter:hover {
     color: var(--hover);
@@ -1149,6 +1151,164 @@ ul {
     outline: none;
 }
 
+/*Events*/
+
+.events-swiper {
+    display: none;
+}
+
+.events {
+    margin-top: 83px;
+}
+
+.events-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.events-card {
+    margin-bottom: 35px;
+    position: relative;
+    min-height: 700px;
+    min-width: 500px;
+    outline: 1px solid #CACACA;
+}
+
+.events-card:nth-child(4){
+    display: none;
+}
+.events-card:nth-child(5){
+    display: none;
+}
+
+.events-cards-pic1 {
+    margin-bottom: 14px;
+    min-height: 300px;
+    background-image: url('../img/event-card1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.events-cards-pic2 {
+    margin-bottom: 14px;
+    min-height: 300px;
+    background-image: url('../img/event-card2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.events-cards-pic3 {
+    margin-bottom: 14px;
+    min-height: 300px;
+    background-image: url('../img/event-card3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.events-cards-pic4 {
+    margin-bottom: 14px;
+    min-height: 300px;
+    background-image: url('../img/event-card4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.events-cards-pic5 {
+    margin-bottom: 14px;
+    min-height: 300px;
+    background-image: url('../img/event-card5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.events-card-name,
+.events-card-date {
+    margin-right: 17px;
+    margin-bottom: 0px;
+    margin-top: 0;
+    font-family: 'Open Sans Semi-bold';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    color: #999999;
+    
+}
+
+.events-card-title {
+    margin-top: 3px;
+    margin-bottom: 0;
+    max-width: 420px;
+    margin-left: 51px;
+    font-family: 'Open Sans Semi-bold';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
+
+
+}
+
+.events-card-description {
+    margin-top: 1px;
+    margin-left: 51px;
+    max-width: 400px;
+    font-family: 'Open Sans Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.events-card-link {
+    position: absolute;
+    top: 89.5%;
+    right: 72.5%;
+    left: 0px;
+    bottom: 6.3%;
+    margin-left: 51px;
+    font-family: 'Open Sans Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--main);
+    border-bottom: 1px solid var(--main);
+}
+
+.events-card-link:hover,
+.events-btn:hover {
+    color: var(--hover);
+    transition: color .3s;
+}
+
+.events-card-link:active,
+.events-btn:active {
+    color: var(--focus);
+    outline: none;
+}
+
+.events-card-link:focus {
+    outline: 1px solid var(--focus);
+}
+
+.events-btn {
+    margin: 0 auto;
+    padding: 15px 33px;
+    display: flex;
+    background: none;
+    font-family: 'Open Sans Bold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--main);
+    border-color: var(--main);
+    border-radius: 40px;
+}
+
+.events-btn:focus {
+    outline: none;
+}
 
 @media(max-width:1420px){
     .under-header{
@@ -1169,7 +1329,8 @@ ul {
 
     .accordion-title::after,
     .accordion-title:active::after,
-    .accordion-title:hover:after {
+    .accordion-title:hover:after,
+    .accordion-title:focus:after {
         left: 90%;
         background-size: 50px;
     }
@@ -1177,6 +1338,24 @@ ul {
     .accordion-content {
         padding-top: 0;
         height: 438px;
+    }
+
+    .events-card {
+        min-width: 0;
+        flex: 1 1 30%;
+        margin-right: 30px;
+    }
+
+    .events-card-link {
+        top: 92.5%;
+        left: 0px;
+        bottom: 3.3%;
+        border-bottom: none;
+    }
+
+    .events-card-link:focus{
+        outline: none;
+        color: var(--hover);
     }
 
 
@@ -1432,7 +1611,8 @@ ul {
 
     .accordion-title::after,
     .accordion-title:active::after,
-    .accordion-title:hover:after {
+    .accordion-title:hover:after,
+    .accordion-title:focus:after {
         left: 88%;
         
     }
@@ -1442,14 +1622,55 @@ ul {
         margin-left: 1px;
         column-gap: 44px;
     }
-    
+
+    .Title-events {
+        margin-bottom: 15px;
+    }
+
+    .events-cards {
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+
+    .events-card {
+        max-width: 290px;
+        margin-right: 0;
+        min-height: 681px;
+    }
+
+    .events-cards-pic1,
+    .events-cards-pic2,
+    .events-cards-pic3,
+    .events-cards-pic4,
+    .events-cards-pic5{
+        min-height: 200px;
+    }
+
+     .events-card-title {
+        margin-left: 34px;
+        margin-right: 20px;
+    }
+
+    .events-card-description {
+        margin-top: 2px;
+        margin-right: 31px;
+        margin-left: 36px;
+    }
+
+    .events-card-link {
+        top: 88%;
+        left: -6%;
+        right: 57%;
+        bottom: 7%;
+        border-bottom: 1px solid var(--main);
 }
 
 @media(max-width:935px){
 
     .accordion-title::after,
     .accordion-title:active::after,
-    .accordion-title:hover:after {
+    .accordion-title:hover:after,
+    .accordion-title:focus:after {
         left: 85%;
     }
 
@@ -1461,6 +1682,19 @@ ul {
         column-gap: 20px;
         column-width: 100px;
         column-count: 2;
+    }
+
+    .events-card {
+        max-width: 49%;
+        flex: 1 1 49%;
+    }
+
+    #card3 {
+        display: none;
+    }
+
+    .events-card-link {
+        border-bottom: none;
     }
 }
 
@@ -1640,7 +1874,8 @@ ul {
 
     .accordion-title::after,
     .accordion-title:active::after,
-    .accordion-title:hover:after {
+    .accordion-title:hover:after,
+    .accordion-title:focus:after {
         left: 92%;
     }
 
@@ -1653,6 +1888,30 @@ ul {
         column-gap: 34px;
         column-count: auto;
     }
+
+    .events {
+        margin-top: 55px;
+    }
+
+    .events-cards {
+        padding-right: 6px;
+    }
+
+    .events-card {
+        max-width: 317px;
+        margin-left: 2px;
+    }
+
+    .events-card-title {
+        margin-right: 22px;
+    }
+
+    .events-card-link {
+        top: 88.5%;
+        left: -5%;
+        right: 61%;
+        bottom: 7.3%;
+        border-bottom: 1px solid var(--main);
     
 }
 
@@ -1747,13 +2006,55 @@ ul {
 
     .accordion-title::after,
     .accordion-title:active::after,
-    .accordion-title:hover:after {
+    .accordion-title:hover:after,
+    .accordion-title:focus:after {
         background-size: 40px;
         left: 87%;
     }
+
+    .events-cards {
+        display: none;
+    }
+
+    .events-btn {
+        display: none;
+    }
+
+    .events-swiper {
+        display: block;
+        max-width: 100%;
+        height: 720px;
+    }
+
+    .events-wrapper {
+        height: 683px;
+    }
+
+  .events-card {
+      max-width: 99%;
+      margin: 0 auto;
+  }
+
+    .events-card-link{
+        top: 90%;
+        border-bottom: none;
+    }
+
+    .events-pagination {
+       max-width: 100px;
+       margin: 0 auto;
+    }
+
+    .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #666666;
+    }
+
+    
 }
 
-@media(max-width:350px){  
+@media(max-width:350px) {  
+
     
     .container{
         max-width: 305px;
@@ -1990,7 +2291,8 @@ ul {
 
     .accordion-title::after,
     .accordion-title:active::after,
-    .accordion-title:hover:after {
+    .accordion-title:hover:after,
+    .accordion-title:focus:after {
         background-size: 30px;
         left: 89%;
     }
@@ -2036,5 +2338,55 @@ ul {
         max-width: 288px;
     }    
 
+    .events {
+        margin-top: 22px;
+    }
 
-}   
+    .events-card {
+        max-width: 98%;
+    }
+
+    .events-card-name, 
+    .events-card-date {
+        margin-right: 11px;
+    }
+
+    .events-card-title {
+        margin-right: 0;
+        margin-left: 30px;
+        margin-bottom: 36px;
+    }
+
+    .events-card-description {
+        margin-left: 29px;
+    }
+
+    .events-card-link {
+        top: 88.2%;
+        left: -8%;
+        right: 58%;
+        bottom: 7.5%;
+        border-bottom: 1px solid var(--main);
+        
+    }
+
+    .events-pagination {
+        margin-top: 13px;
+        max-width: 121px;
+    }
+
+   
+
+    .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+        
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 7px;
+    }
+
+
+    
+}}}
