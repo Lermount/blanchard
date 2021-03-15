@@ -20,8 +20,9 @@ var mySwiper = new Swiper('.hero-swiper', {
 
 });
 
+
 //swiper-gallery
-var Swiper = new Swiper('.gallery-swiper', {
+var gallerySwiper = new Swiper('.gallery-swiper', {
     
     spaceBetween: 50,
     slidesPerView: 3,
@@ -61,13 +62,60 @@ var Swiper = new Swiper('.gallery-swiper', {
             slidesPerView: 1,
             slidesPerGroup: 1,
             slidesPerColumn: 1,
-        }
+        },
         
-    }
+    },
    
   
 });
 
+//books-swiper
+var bookSwiper = new Swiper('.books-swiper', {
+    
+    spaceBetween: 50,
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    
+    pagination: {
+      el: '.swiper-paginationg',
+      type: 'fraction',
+    },
+
+    navigation: {
+      nextEl: '.books-swiper-next',
+      prevEl: '.books-swiper-prev',
+    },
+
+    breakpoints: {
+        1025:{
+            spaceBetween: 50,
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+        },
+
+        769:{
+            spaceBetween: 50,
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+        },
+
+        689:{
+            spaceBetween: 34,
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+        },
+
+        350:{
+            spaceBetween: 50,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+        }
+        
+    },
+   
+  
+});
+  
 
 //scroll
 new SimpleBar(document.getElementById('realizm'));
@@ -89,9 +137,6 @@ function closer(){
     document.getElementById("menu").style.display = "none";
 }
 
-element.click(function(burger) {
-    document.getElementById("menu").style.display = "block";
-});
 
 //input-adaptive open
 function viewSearch(){
@@ -137,6 +182,13 @@ function viewSearch(){
 
 }
 
+//custom select
 
+  const element = document.querySelector('.categories-select-choice');
+    const choices = new Choices(element, {
+  } );
+
+
+ 
 
 

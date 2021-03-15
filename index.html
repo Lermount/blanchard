@@ -25,12 +25,13 @@
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-
+        <!--Custom Select-->
+        <link rel="stylesheet" href="choices/choices.min.css">
 
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/style.css">
 
-
+       
 </head>
 
 <body>
@@ -50,10 +51,10 @@
                                                 <li class="burger-item"><a href="#catalog" class="burger-link"
                                                                 aria-label="Ссылка Каталог">Каталог</a>
                                                 </li>
-                                                <li class="burger-item"><a href="#" class="burger-link"
+                                                <li class="burger-item"><a href="#events" class="burger-link"
                                                                 aria-label="Ссылка События">События</a>
                                                 </li>
-                                                <li class="burger-item"><a href="#" class="burger-link"
+                                                <li class="burger-item"><a href="#books" class="burger-link"
                                                                 aria-label="Ссылка Издания">Издания</a>
                                                 </li>
                                                 <li class="burger-item"><a href="#" class="burger-link"
@@ -87,9 +88,11 @@
                                                                 class="nav-list-link">Галерея</a></li>
                                                 <li class="nav-list-item"><a href="#catalog"
                                                                 class="nav-list-link">Каталог</a></li>
-                                                <li class="nav-list-item"><a href="#" class="nav-list-link">События</a>
+                                                <li class="nav-list-item"><a href="#events"
+                                                                class="nav-list-link">События</a>
                                                 </li>
-                                                <li class="nav-list-item"><a href="#" class="nav-list-link">Издания</a>
+                                                <li class="nav-list-item"><a href="#books"
+                                                                class="nav-list-link">Издания</a>
                                                 </li>
                                                 <li class="nav-list-item"><a href="#" class="nav-list-link">Проекты</a>
                                                 </li>
@@ -681,8 +684,8 @@
                         </div>
                 </section>
 
-                <section class="events container">
-                        <div class="Title Title-events">События</div>
+                <section class="events container" id="events">
+                        <h2 class="Title Title-events">События</h2>
                         <ul class="events-cards">
                                 <li class="events-card">
                                         <div class="events-cards-pic1">
@@ -867,12 +870,480 @@
 
                 </section>
 
+                <section class="books" id="books">
+                        <div class="books-content container">
+
+
+
+                                <div class="categories">
+                                        <h2 class="Title white">Издания</h2>
+                                        <p class="categories-title">Категории</p>
+                                        <ul class="categories-choice">
+                                                <li class="categories-choice-item">
+                                                        <label for="check1" class="choice-item-label">
+                                                                <input type="checkbox" class="categories-choice-input"
+                                                                        name="check" id="check1">Бестселлеры
+                                                                <span class="categories-choice-customcheck"></span>
+                                                        </label>
+                                                </li>
+                                                <li class="categories-choice-item">
+                                                        <label for="check2" class="choice-item-label">
+                                                                <input type="checkbox" class="categories-choice-input"
+                                                                        name="check" id="check2">Искусство
+                                                                <span class="categories-choice-customcheck"></span>
+                                                        </label>
+                                                </li>
+                                                <li class="categories-choice-item">
+                                                        <label for="check3" class="choice-item-label">
+                                                                <input type="checkbox" class="categories-choice-input"
+                                                                        name="check" id="check3">Архитектура
+                                                                <span class="categories-choice-customcheck"></span>
+                                                        </label>
+                                                </li>
+                                                <li class="categories-choice-item">
+                                                        <label for="check4" class="choice-item-label">
+                                                                <input type="checkbox" class="categories-choice-input"
+                                                                        name="check" id="check4">Дизайн
+                                                                <span class="categories-choice-customcheck"></span>
+                                                        </label>
+                                                </li>
+                                                <li class="categories-choice-item">
+                                                        <label for="check5" class="choice-item-label">
+                                                                <input type="checkbox" class="categories-choice-input"
+                                                                        name="check" id="check5">Мода
+                                                                <span class="categories-choice-customcheck"></span>
+                                                        </label>
+                                                </li>
+                                                <li class="categories-choice-item">
+                                                        <label for="check6" class="choice-item-label">
+                                                                <input type="checkbox" class="categories-choice-input"
+                                                                        name="check" id="check6">Детям
+                                                                <span class="categories-choice-customcheck"></span>
+                                                        </label>
+                                                </li>
+                                                <li class="categories-choice-item">
+                                                        <label for="check7" class="choice-item-label">
+                                                                <input type="checkbox" class="categories-choice-input"
+                                                                        name="check" id="check7"> Художественная
+                                                                литература
+                                                                <span class="categories-choice-customcheck"></span>
+                                                        </label>
+                                                </li>
+                                                <li class="categories-choice-item">
+                                                        <label for="check8" class="choice-item-label">
+                                                                <input type="checkbox" class="categories-choice-input"
+                                                                        name="check" id="check8">Публицистика
+                                                                <span class="categories-choice-customcheck"></span>
+                                                        </label>
+                                                </li>
+                                                <li class="categories-choice-item">
+                                                        <label for="check9" class="choice-item-label">
+                                                                <input type="checkbox" class="categories-choice-input"
+                                                                        name="check" id="check9">Путеводители
+                                                                <span class="categories-choice-customcheck"></span>
+                                                        </label>
+                                                </li>
+                                                <li class="categories-choice-item">
+                                                        <label for="check10" class="choice-item-label">
+                                                                <input type="checkbox" class="categories-choice-input"
+                                                                        name="check" id="check10">Философия
+                                                                <span class="categories-choice-customcheck"></span>
+                                                        </label>
+                                                </li>
+                                                <li class="categories-choice-item">
+                                                        <label for="check11" class="choice-item-label">
+                                                                <input type="checkbox" class="categories-choice-input"
+                                                                        name="check" id="check11">Учебная литература
+                                                                <span class="categories-choice-customcheck"></span>
+                                                        </label>
+                                                </li>
+                                                <li class="categories-choice-item">
+                                                        <label for="check12" class="choice-item-label">
+                                                                <input type="checkbox" class="categories-choice-input"
+                                                                        name="check" id="check12">Журналы и газеты
+                                                                <span class="categories-choice-customcheck"></span>
+                                                        </label>
+                                                </li>
+                                        </ul>
+
+                                        <div class="categories-choice-mobile">
+                                                <ul class="categories-choice-column1">
+                                                        <li class="categories-choice-item">
+                                                                <label for="check13" class="choice-item-label">
+                                                                        <input type="checkbox"
+                                                                                class="categories-choice-input"
+                                                                                name="check" id="check13">Бестселлеры
+                                                                        <span
+                                                                                class="categories-choice-customcheck"></span>
+                                                                </label>
+                                                        </li>
+                                                        <li class="categories-choice-item">
+                                                                <label for="check14" class="choice-item-label">
+                                                                        <input type="checkbox"
+                                                                                class="categories-choice-input"
+                                                                                name="check" id="check14">Искусство
+                                                                        <span
+                                                                                class="categories-choice-customcheck"></span>
+                                                                </label>
+                                                        </li>
+                                                        <li class="categories-choice-item">
+                                                                <label for="check15" class="choice-item-label">
+                                                                        <input type="checkbox"
+                                                                                class="categories-choice-input"
+                                                                                name="check" id="check15">Архитектура
+                                                                        <span
+                                                                                class="categories-choice-customcheck"></span>
+                                                                </label>
+                                                        </li>
+                                                        <li class="categories-choice-item">
+                                                                <label for="check16" class="choice-item-label">
+                                                                        <input type="checkbox"
+                                                                                class="categories-choice-input"
+                                                                                name="check" id="check16">Дизайн
+                                                                        <span
+                                                                                class="categories-choice-customcheck"></span>
+                                                                </label>
+                                                        </li>
+                                                </ul>
+                                                <ul class="categories-choice-column2">
+                                                        <li class="categories-choice-item">
+                                                                <label for="check17" class="choice-item-label">
+                                                                        <input type="checkbox"
+                                                                                class="categories-choice-input"
+                                                                                name="check" id="check17">Мода
+                                                                        <span
+                                                                                class="categories-choice-customcheck"></span>
+                                                                </label>
+                                                        </li>
+                                                        <li class="categories-choice-item">
+                                                                <label for="check18" class="choice-item-label">
+                                                                        <input type="checkbox"
+                                                                                class="categories-choice-input"
+                                                                                name="check" id="check18">Детям
+                                                                        <span
+                                                                                class="categories-choice-customcheck"></span>
+                                                                </label>
+                                                        </li>
+                                                        <li class="categories-choice-item">
+                                                                <label for="check19" class="choice-item-label">
+                                                                        <input type="checkbox"
+                                                                                class="categories-choice-input"
+                                                                                name="check" id="check19"> Художественная
+                                                                        литература
+                                                                        <span
+                                                                                class="categories-choice-customcheck"></span>
+                                                                </label>
+                                                        </li>
+                                                        <li class="categories-choice-item">
+                                                                <label for="check20" class="choice-item-label">
+                                                                        <input type="checkbox"
+                                                                                class="categories-choice-input"
+                                                                                name="check" id="check20">Публицистика
+                                                                        <span
+                                                                                class="categories-choice-customcheck"></span>
+                                                                </label>
+                                                        </li>
+                                                </ul>
+                                                <ul class="categories-choice-column3">
+                                                        <li class="categories-choice-item">
+                                                                <label for="check21" class="choice-item-label">
+                                                                        <input type="checkbox"
+                                                                                class="categories-choice-input"
+                                                                                name="check" id="check21">Путеводители
+                                                                        <span
+                                                                                class="categories-choice-customcheck"></span>
+                                                                </label>
+                                                        </li>
+                                                        <li class="categories-choice-item">
+                                                                <label for="check22" class="choice-item-label">
+                                                                        <input type="checkbox"
+                                                                                class="categories-choice-input"
+                                                                                name="check" id="check22">Философия
+                                                                        <span
+                                                                                class="categories-choice-customcheck"></span>
+                                                                </label>
+                                                        </li>
+                                                        <li class="categories-choice-item">
+                                                                <label for="check23" class="choice-item-label">
+                                                                        <input type="checkbox"
+                                                                                class="categories-choice-input"
+                                                                                name="check" id="check23">Учебная
+                                                                        литература
+                                                                        <span
+                                                                                class="categories-choice-customcheck"></span>
+                                                                </label>
+                                                        </li>
+                                                        <li class="categories-choice-item">
+                                                                <label for="check24" class="choice-item-label">
+                                                                        <input type="checkbox"
+                                                                                class="categories-choice-input"
+                                                                                name="check" id="check24">Журналы и
+                                                                        газеты
+                                                                        <span
+                                                                                class="categories-choice-customcheck"></span>
+                                                                </label>
+                                                        </li>
+                                                </ul>
+                                        </div>
+
+                                        <div class="categories-choice-select">
+                                
+                                                <select class="categories-select-title">
+                                                        <option>Категории</option>
+                                                </select>
+
+                                                <select class="categories-select-choice">
+                                                        <option>
+                                                               
+                                                        </option>
+                                                        <option></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                </select>
+                                                
+                                        </div>
+                                        <div class="price">
+                                                <p class="price-title">Цена</p>
+                                                <div class="price-content">
+                                                        <span class="price-content-span">От</span>
+                                                        <input type="text" class="price-content-input" placeholder="50">
+                                                        <span class="price-content-span">до</span>
+                                                        <input type="text" class="price-content-input"
+                                                                placeholder="25000">
+                                                        <span class="price-content-span">руб.</span>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="swiper-container books-swiper">
+                                        <div class="books-nav">
+                                                <div class="books-swiper-prev"></div>
+                                                <div class="swiper-paginationg book-pagination"></div>
+                                                <div class="books-swiper-next"></div>
+                                        </div>
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper books-wrapper">
+                                                <!-- Slides -->
+                                                <div class="swiper-slide books-slide books-slide-1">
+                                                        <div class="books-slide-pic1">
+
+                                                        </div>
+                                                        <div class="books-slide-description">
+                                                                <div class="books-description">
+                                                                        <p class="books-name">Искусство цвета
+                                                                        </p>
+                                                                        <p class="books-author">Иттен, Иоханнес
+                                                                        </p>
+                                                                </div>
+                                                                <p class="books-price">620 руб</p>
+                                                        </div>
+                                                        <button class="books-slide-btn">Заказать</button>
+                                                </div>
+                                                <div class="swiper-slide books-slide books-slide-2">
+                                                        <div class="books-slide-pic2">
+
+                                                        </div>
+                                                        <div class="books-slide-description">
+                                                                <div class="books-description">
+                                                                        <p class="books-name">Типографика</p>
+                                                                        <p class="books-author">Рудер, Эмиль</p>
+                                                                </div>
+                                                                <p class="books-price">2 450 руб</p>
+                                                        </div>
+                                                        <button class="books-slide-btn">Заказать</button>
+                                                </div>
+                                                <div class="swiper-slide books-slide books-slide-3">
+                                                        <div class="books-slide-pic3">
+
+                                                        </div>
+                                                        <div class="books-slide-description">
+                                                                <div class="books-description">
+                                                                        <p class="books-name">Книга про буквы
+                                                                        </p>
+                                                                        <p class="books-author">Гордон, Юрий</p>
+                                                                </div>
+                                                                <p class="books-price">2 200 руб</p>
+                                                        </div>
+                                                        <button class="books-slide-btn">Заказать</button>
+                                                </div>
+                                                <div class="swiper-slide books-slide books-slide-4">
+                                                        <div class="books-slide-pic4">
+
+                                                        </div>
+                                                        <div class="books-slide-description">
+                                                                <div class="books-description">
+                                                                        <p class="books-name">Николай Ильин</p>
+                                                                        <p class="books-author">Кричевский,
+                                                                                Владимир</p>
+                                                                </div>
+                                                                <p class="books-price">1 100 руб</p>
+                                                        </div>
+                                                        <button class="books-slide-btn">Заказать</button>
+                                                </div>
+                                                <div class="swiper-slide books-slide books-slide-5">
+                                                        <div class="books-slide-pic5">
+
+                                                        </div>
+                                                        <div class="books-slide-description">
+                                                                <div class="books-description">
+                                                                        <p class="books-name">Модульные сетки в
+                                                                                граф...</p>
+                                                                        <p class="books-author">Мюллер-Брокманн,
+                                                                                Йозеф </p>
+                                                                </div>
+                                                                <p class="books-price">1 450 руб</p>
+                                                        </div>
+                                                        <button class="books-slide-btn">Заказать</button>
+                                                </div>
+                                                <div class="swiper-slide books-slide books-slide-6">
+                                                        <div class="books-slide-pic6">
+
+                                                        </div>
+                                                        <div class="books-slide-description">
+                                                                <div class="books-description">
+                                                                        <p class="books-name">Эволюция
+                                                                                графических ст...</p>
+                                                                        <p class="books-author">Хеллер, Чваст
+                                                                        </p>
+                                                                </div>
+                                                                <p class="books-price">3 200 руб</p>
+                                                        </div>
+                                                        <button class="books-slide-btn">Заказать</button>
+                                                </div>
+                                                <div class="swiper-slide books-slide books-slide-7">
+                                                        <div class="books-slide-pic7">
+
+                                                        </div>
+                                                        <div class="books-slide-description">
+                                                                <div class="books-description">
+                                                                        <p class="books-name">Искусство и
+                                                                                визуальное в...</p>
+                                                                        <p class="books-author">Арнхейм, Рудольф
+                                                                        </p>
+                                                                </div>
+                                                                <p class="books-price">2 200 руб</p>
+                                                        </div>
+                                                        <button class="books-slide-btn">Заказать</button>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="books-slides-mobile">
+                                        <div class="swiper-slide books-slide books-slide-1">
+                                                <div class="books-slide-pic1">
+
+                                                </div>
+                                                <div class="books-slide-description">
+                                                        <div class="books-description">
+                                                                <p class="books-name">Искусство цвета
+                                                                </p>
+                                                                <p class="books-author">Иттен, Иоханнес
+                                                                </p>
+                                                        </div>
+                                                        <p class="books-price">620 руб</p>
+                                                </div>
+                                                <button class="books-slide-btn">Заказать</button>
+                                        </div>
+                                        <div class="swiper-slide books-slide books-slide-2">
+                                                <div class="books-slide-pic2">
+
+                                                </div>
+                                                <div class="books-slide-description">
+                                                        <div class="books-description">
+                                                                <p class="books-name">Типографика</p>
+                                                                <p class="books-author">Рудер, Эмиль</p>
+                                                        </div>
+                                                        <p class="books-price">2 450 руб</p>
+                                                </div>
+                                                <button class="books-slide-btn">Заказать</button>
+                                        </div>
+                                        <div class="swiper-slide books-slide books-slide-3">
+                                                <div class="books-slide-pic3">
+
+                                                </div>
+                                                <div class="books-slide-description">
+                                                        <div class="books-description">
+                                                                <p class="books-name">Книга про буквы
+                                                                </p>
+                                                                <p class="books-author">Гордон, Юрий</p>
+                                                        </div>
+                                                        <p class="books-price">2 200 руб</p>
+                                                </div>
+                                                <button class="books-slide-btn">Заказать</button>
+                                        </div>
+                                        <div class="swiper-slide books-slide books-slide-4">
+                                                <div class="books-slide-pic4">
+
+                                                </div>
+                                                <div class="books-slide-description">
+                                                        <div class="books-description">
+                                                                <p class="books-name">Николай Ильин</p>
+                                                                <p class="books-author">Кричевский,
+                                                                        Влади...</p>
+                                                        </div>
+                                                        <p class="books-price">1 100 руб</p>
+                                                </div>
+                                                <button class="books-slide-btn">Заказать</button>
+                                        </div>
+                                        <div class="swiper-slide books-slide books-slide-5">
+                                                <div class="books-slide-pic5">
+
+                                                </div>
+                                                <div class="books-slide-description">
+                                                        <div class="books-description">
+                                                                <p class="books-name">Модульные сетки...</p>
+                                                                <p class="books-author">Мюллер-Брокманн...</p>
+                                                        </div>
+                                                        <p class="books-price">1 450 руб</p>
+                                                </div>
+                                                <button class="books-slide-btn">Заказать</button>
+                                        </div>
+                                        <div class="swiper-slide books-slide books-slide-6">
+                                                <div class="books-slide-pic6">
+
+                                                </div>
+                                                <div class="books-slide-description">
+                                                        <div class="books-description">
+                                                                <p class="books-name">Эволюция
+                                                                        графич...</p>
+                                                                <p class="books-author">Хеллер, Чваст
+                                                                </p>
+                                                        </div>
+                                                        <p class="books-price">3 200 руб</p>
+                                                </div>
+                                                <button class="books-slide-btn">Заказать</button>
+                                        </div>
+                                        <div class="swiper-slide books-slide books-slide-7">
+                                                <div class="books-slide-pic7">
+
+                                                </div>
+                                                <div class="books-slide-description">
+                                                        <div class="books-description">
+                                                                <p class="books-name">Искусство и
+                                                                        визуа...</p>
+                                                                <p class="books-author">Арнхейм, Рудольф
+                                                                </p>
+                                                        </div>
+                                                        <p class="books-price">2 200 руб</p>
+                                                </div>
+                                                <button class="books-slide-btn">Заказать</button>
+                                        </div>
+                                </div>
+
+
+                        </div>
+                </section>
+
         </main>
 
         <footer>
 
         </footer>
         <script src="scroll/simplebar.min.js"></script>
+        <script src="choices/choices.min.js"></script>
         <script src="index.js"></script>
         <script>
                 $(function () {
