@@ -182,11 +182,6 @@ function viewSearch(){
 
 }
 
-//custom select
-
-  const element = document.querySelector('.categories-select-choice');
-    const choices = new Choices(element, {
-  } );
 
 
  

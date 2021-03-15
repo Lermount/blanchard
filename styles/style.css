@@ -2552,6 +2552,7 @@ ul {
 
     .categories-choice-mobile {
         display: none;
+
     }
 
     .categories-title {
@@ -2560,45 +2561,71 @@ ul {
 
     .categories-choice-select {
         display: block;
+        position: relative;
     }
 
-    .categories-select-title {
-        position: relative;
-        padding-top: 8px;
-        padding-bottom: 6px;
-        width: 100%;
-        background: none;
-        border-left: none;
-        border-right: none;
-        border-color: rgba(255, 255, 255, 0.5);
-        color: var(--text);
+    .choice-select-title{
+        padding-top: 2px;
+        padding-bottom: 4px;
+        margin-left: 1px;
+        margin-top: -2px;
+        width: 99%;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         font-family: 'Open Sans Bold';
+        background: url('../img/arrow-select-gallary.svg') no-repeat right center;
         font-weight: 700;
         font-size: 16px;
-        line-height: 32px;  
-      
+        line-height: 32px;
+        color: var(--text);
     }
 
-    .categories-select-title:focus {
-        color: var(--focus);
-        outline: none;
+    .choice-select-title:active,
+    .choice-select-title:focus {
+        background: url('../img/arrow-up.svg') no-repeat right center;
+        transition: background .3s ease-in-out;
     }
 
-    .choices[data-type*=select-one] .choices__inner {
-        background: none;
-        border-radius: 0px;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        border-color: rgba(255, 255, 255, 0.5);
-        min-height: 38px;
+    .choice-select-option {
+        height:38px;
+        width: 99%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        opacity: 0;
+        z-index: 2;
+        background: url('../img/select-closer.svg') no-repeat right center;
+        transition: opacity .3s ease-in-out;
+        border-bottom:  1px solid rgba(255, 255, 255, 0.5);
+        overflow: auto;
+        
     }
 
-    
+    .choice-select-title:hover + .choice-select-option,
+    .choice-select-title:focus + .choice-select-option  {
+        opacity: 1;
+    }
+
+    .select-option-label {
+        margin: 0;
+        padding: 0;
+        margin-top: 6px;
+        padding-left: 2px;
+    }
+
+    .categories-choice-input + .categories-choice-customcheck {
+        top: 27%;
+    }
+
+    .price-title {
+        margin-top: 60px;
+    }
 
     .price-content {
         width: 277px;
     }
+
 
     .books-swiper {
         height: 600px;
@@ -2976,12 +3003,8 @@ ul {
         padding-bottom: 45px;
     }
 
-    .categories-select-title {
-        margin-top: -2px;
-    }
-
     .price-title {
-        margin-top: 21px;
+        margin-top: 59px;
         margin-bottom: 5px;
     }
 
