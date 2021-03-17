@@ -1330,9 +1330,10 @@ ul {
 /*Books*/
 
 .books {
-    background: url('../img/books-background.png');
+    background-image: url('../img/books-background.png');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     margin-top: 80px;
 }
 
