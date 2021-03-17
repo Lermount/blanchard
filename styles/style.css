@@ -261,6 +261,7 @@ ul {
     background-image: url('../img/search.svg');
     width: 22.1px;
     height: 21.62px;
+    cursor: pointer;
 }
 
 
@@ -654,6 +655,7 @@ ul {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    cursor: pointer;
 }
 
 .gallery-select:nth-child(3){
@@ -723,6 +725,7 @@ ul {
     background-repeat: no-repeat;
     flex: 1 1 33.33%;
     height: 30px;
+    cursor: pointer;
 }
 
 .swiper-paginationg {
@@ -739,6 +742,7 @@ ul {
     background-repeat: no-repeat;
     flex: 1 1 33.33%;
     height: 30px;
+    cursor: pointer;
 }
 .gallery-swiper-prev:focus {
     outline: none;
@@ -753,6 +757,7 @@ ul {
 .gallery-slide {
     height: 350px;
     position: relative;
+    cursor: pointer;
 }
 
 
@@ -912,6 +917,7 @@ ul {
     width: 66px;
     border: 2px solid transparent;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .language-item:not(:last-child){
@@ -1031,6 +1037,7 @@ ul {
     font-size: 24px;
     line-height: 32px;
     color: #333333;
+    cursor: pointer;
 }
 
 .accordion-title::after {
@@ -1313,6 +1320,7 @@ ul {
     color: var(--main);
     border-color: var(--main);
     border-radius: 40px;
+    cursor: pointer;
 }
 
 .events-btn:focus {
@@ -1367,6 +1375,7 @@ ul {
     font-size: 16px;
     line-height: 32px;
     color: var(--text);
+  
 }
 
 .categories-choice-item:hover {
@@ -1388,6 +1397,7 @@ ul {
 .choice-item-label {
     position: relative;
     padding-left: 24px;
+    cursor: pointer;
 }
 
 .categories-choice-input {
@@ -1488,6 +1498,7 @@ ul {
      background-repeat: no-repeat;
      flex: 1 1 33.33%;
      height: 30px;
+     cursor: pointer;
  }
  
  
@@ -1496,6 +1507,7 @@ ul {
      background-repeat: no-repeat;
      flex: 1 1 33.33%;
      height: 30px;
+     cursor: pointer;
  }
  .books-swiper-prev:focus {
      outline: none;
@@ -1599,6 +1611,7 @@ ul {
     border: 2px solid var(--main);
     box-sizing: border-box;
     border-radius: 100px;
+    cursor: pointer;
 }
 
 .books-slide-btn:hover {
