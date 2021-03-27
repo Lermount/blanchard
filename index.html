@@ -25,6 +25,9 @@
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+        <!--Yandex card-->
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+        </script>
 
 
         <link rel="stylesheet" href="styles/normalize.css">
@@ -56,10 +59,10 @@
                                                 <li class="burger-item"><a href="#books" class="burger-link"
                                                                 aria-label="Ссылка Издания">Издания</a>
                                                 </li>
-                                                <li class="burger-item"><a href="#" class="burger-link"
+                                                <li class="burger-item"><a href="#progects" class="burger-link"
                                                                 aria-label="Ссылка Проекты">Проекты</a>
                                                 </li>
-                                                <li class="burger-item"><a href="#" class="burger-link"
+                                                <li class="burger-item"><a href="#conatcts" class="burger-link"
                                                                 aria-label="Ссылка Контакты">Контакты</a></li>
                                         </ul>
                                         <a href="#" class="enter enter-active">Войти</a>
@@ -93,9 +96,11 @@
                                                 <li class="nav-list-item"><a href="#books"
                                                                 class="nav-list-link">Издания</a>
                                                 </li>
-                                                <li class="nav-list-item"><a href="#" class="nav-list-link">Проекты</a>
+                                                <li class="nav-list-item"><a href="#progects"
+                                                                class="nav-list-link">Проекты</a>
                                                 </li>
-                                                <li class="nav-list-item"><a href="#" class="nav-list-link">Контакты</a>
+                                                <li class="nav-list-item"><a href="#conatcts"
+                                                                class="nav-list-link">Контакты</a>
                                                 </li>
                                         </ul>
 
@@ -216,7 +221,7 @@
                                         намеченных
                                         плановых
                                         заданий создаёт предпосылки для новых предложений.</p>
-                                <a href="#" class="hero-btn">Подписаться на рассылку</a>
+                                <a href="#contacts-form" class="hero-btn">Подписаться на рассылку</a>
                         </div>
                 </section>
 
@@ -315,11 +320,11 @@
                                 <h2 class="Title title-catalog">Каталог</h2>
 
                                 <ul class="language">
-                                        <li tabindex="0" class="language-item french"></li>
-                                        <li tabindex="0" class="language-item german"></li>
-                                        <li tabindex="0" class="language-item italian"></li>
-                                        <li tabindex="0" class="language-item russian"></li>
-                                        <li tabindex="0" class="language-item belgian"></li>
+                                        <li tabindex="0" class="language-item french" onmousedown="french()"></li>
+                                        <li tabindex="0" class="language-item german" onmousedown="german()"></li>
+                                        <li tabindex="0" class="language-item italian" onmousedown="italian()"></li>
+                                        <li tabindex="0" class="language-item russian" onmousedown="russian()"></li>
+                                        <li tabindex="0" class="language-item belgian" onmousedown="belgian()"></li>
                                 </ul>
                         </div>
 
@@ -334,8 +339,9 @@
                                 элементы.
                         </p>
 
-                        <div class="catalog-main">
-                                <div class="catalog-main-left">
+
+                        <div class="catalog-main" id="catalog-main">
+                                <div class="catalog-main-left" id="catalog-main-left">
                                         <div class="portrait"></div>
                                         <p class="portrait-name">
                                                 Доменико Гирландайо
@@ -356,88 +362,154 @@
                                                 их роли выступают знатные граждане Флоренции в костюмах того времени).
                                         </p>
                                 </div>
+
+                                <div class="catalog-main-left catalog-main-left2" id="catalog-main-left2">
+                                        <div class="portrait portrait2"></div>
+                                        <p class="portrait-name">
+                                                Lorem, ipsum.
+                                        </p>
+                                        <p class="portrait-date">
+                                                Lorem ipsum dolor sit. — Lorem ipsum dolor sit.
+                                        </p>
+                                        <p class="portrait-description">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error nostrum
+                                                omnis id placeat. Sint nam ratione reiciendis voluptate, explicabo eum
+                                                quae illo culpa expedita obcaecati, ipsum ex aliquam praesentium
+                                                cupiditate nobis consectetur sapiente consequuntur tempore dolore
+                                                debitis veniam architecto hic ipsam. Ratione quis repellat repellendus
+                                                debitis deleniti voluptates tenetur laudantium?
+                                        </p>
+                                </div>
                                 <div class="catalog-main-right">
                                         <div id="accordion" class="accordion">
                                                 <h3 class="accordion-title">C 1400 по 1499 гг.</h3>
                                                 <div class="accordion-content">
                                                         <ul class="catalog-accordion-list">
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бенедетто ди
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бенедетто ди
                                                                                 Биндо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бергоньоне,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бергоньоне,
                                                                                 Амброджо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Биссоло,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Биссоло,
                                                                                 Франческо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Больтраффио,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Больтраффио,
                                                                                 Джованни</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бонсиньори,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бонсиньори,
                                                                                 Франческо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Боттичини,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Боттичини,
                                                                                 Рафаэлло</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Брамантино</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Брамантино</a>
                                                                 </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бреа,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бреа,
                                                                                 Людовико</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бьяджо
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бьяджо
                                                                                 д’Антонио Туччи</a></li>
 
 
 
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Веккьетта</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Веккьетта</a>
                                                                 </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Андреа
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Андреа
                                                                                 Верроккьо</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Доменико
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="Domenico()">Доменико
                                                                                 Гирландайо</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Беноццо
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Беноццо
                                                                                 Гоццоли</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Граначчи,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Граначчи,
                                                                                 Франческо</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Грегорио ди
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Грегорио ди
                                                                                 Чекко</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Джованни да
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Джованни да
                                                                                 Удине</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Джованни ди
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Джованни ди
                                                                                 Паоло</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Джорджоне</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Джорджоне</a>
                                                                 </li>
 
 
 
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Парентино,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Парентино,
                                                                                 Бернардо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Пезеллино</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пезеллино</a>
                                                                 </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Пьетро
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пьетро
                                                                                 Перуджино</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Перуцци,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Перуцци,
                                                                                 Бальдассаре</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Пизанелло</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пизанелло</a>
                                                                 </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Пинтуриккьо</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пинтуриккьо</a>
                                                                 </li>
                                                         </ul>
                                                 </div>
@@ -445,65 +517,220 @@
                                                 <h3 class="accordion-title">C 1500 по 1599 гг.</h3>
                                                 <div class="accordion-content">
                                                         <ul class="catalog-accordion-list">
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бенедетто ди
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бенедетто ди
                                                                                 Биндо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бергоньоне,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бергоньоне,
                                                                                 Амброджо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Биссоло,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Биссоло,
                                                                                 Франческо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Больтраффио,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Больтраффио,
                                                                                 Джованни</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бонсиньори,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бонсиньори,
                                                                                 Франческо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Боттичини,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Боттичини,
                                                                                 Рафаэлло</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Брамантино</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Брамантино</a>
                                                                 </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бреа,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бреа,
                                                                                 Людовико</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бьяджо
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бьяджо
                                                                                 д’Антонио Туччи</a></li>
+
+
+
+
+
+
+
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Парентино,
+                                                                                Бернардо</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пезеллино</a>
+                                                                </li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пьетро
+                                                                                Перуджино</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Перуцци,
+                                                                                Бальдассаре</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пизанелло</a>
+                                                                </li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пинтуриккьо</a>
+                                                                </li>
                                                         </ul>
+
                                                 </div>
 
                                                 <h3 class="accordion-title">C 1600 по 1699 гг.</h3>
                                                 <div class="accordion-content">
                                                         <ul class="catalog-accordion-list">
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Веккьетта</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бенедетто ди
+                                                                                Биндо</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бергоньоне,
+                                                                                Амброджо</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Биссоло,
+                                                                                Франческо</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Больтраффио,
+                                                                                Джованни</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бонсиньори,
+                                                                                Франческо</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Боттичини,
+                                                                                Рафаэлло</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Брамантино</a>
                                                                 </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Андреа
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бреа,
+                                                                                Людовико</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бьяджо
+                                                                                д’Антонио Туччи</a></li>
+
+
+
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Веккьетта</a>
+                                                                </li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Андреа
                                                                                 Верроккьо</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Доменико
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="Domenico()">Доменико
                                                                                 Гирландайо</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Беноццо
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Беноццо
                                                                                 Гоццоли</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Граначчи,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Граначчи,
                                                                                 Франческо</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Грегорио ди
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Грегорио ди
                                                                                 Чекко</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Джованни да
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Джованни да
                                                                                 Удине</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Джованни ди
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Джованни ди
                                                                                 Паоло</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Джорджоне</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Джорджоне</a>
+                                                                </li>
+
+
+
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Парентино,
+                                                                                Бернардо</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пезеллино</a>
+                                                                </li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пьетро
+                                                                                Перуджино</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Перуцци,
+                                                                                Бальдассаре</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пизанелло</a>
+                                                                </li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пинтуриккьо</a>
                                                                 </li>
                                                         </ul>
                                                 </div>
@@ -511,79 +738,39 @@
                                                 <h3 class="accordion-title">C 1700 по 1799 гг.</h3>
                                                 <div class="accordion-content">
                                                         <ul class="catalog-accordion-list">
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бенедетто ди
-                                                                                Биндо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бергоньоне,
-                                                                                Амброджо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Биссоло,
-                                                                                Франческо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Больтраффио,
-                                                                                Джованни</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бонсиньори,
-                                                                                Франческо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Боттичини,
-                                                                                Рафаэлло</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Брамантино</a>
-                                                                </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бреа,
-                                                                                Людовико</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бьяджо
-                                                                                д’Антонио Туччи</a></li>
 
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Веккьетта</a>
-                                                                </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Андреа
-                                                                                Верроккьо</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Доменико
-                                                                                Гирландайо</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Беноццо
-                                                                                Гоццоли</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Граначчи,
-                                                                                Франческо</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Грегорио ди
-                                                                                Чекко</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Джованни да
-                                                                                Удине</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Джованни ди
-                                                                                Паоло</a> </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Джорджоне</a>
-                                                                </li>
 
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Парентино,
+
+
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Парентино,
                                                                                 Бернардо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Пезеллино</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пезеллино</a>
                                                                 </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Пьетро
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пьетро
                                                                                 Перуджино</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Перуцци,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Перуцци,
                                                                                 Бальдассаре</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Пизанелло</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пизанелло</a>
                                                                 </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Пинтуриккьо</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пинтуриккьо</a>
                                                                 </li>
                                                         </ul>
                                                 </div>
@@ -591,23 +778,86 @@
                                                 <h3 class="accordion-title">C 1800 по 1899 гг.</h3>
                                                 <div class="accordion-content">
                                                         <ul class="catalog-accordion-list">
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Парентино,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бенедетто ди
+                                                                                Биндо</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бергоньоне,
+                                                                                Амброджо</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Биссоло,
+                                                                                Франческо</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Больтраффио,
+                                                                                Джованни</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бонсиньори,
+                                                                                Франческо</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Боттичини,
+                                                                                Рафаэлло</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Брамантино</a>
+                                                                </li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бреа,
+                                                                                Людовико</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бьяджо
+                                                                                д’Антонио Туччи</a></li>
+
+
+
+
+
+
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Парентино,
                                                                                 Бернардо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Пезеллино</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пезеллино</a>
                                                                 </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Пьетро
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пьетро
                                                                                 Перуджино</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Перуцци,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Перуцци,
                                                                                 Бальдассаре</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Пизанелло</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пизанелло</a>
                                                                 </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Пинтуриккьо</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пинтуриккьо</a>
                                                                 </li>
                                                         </ul>
                                                 </div>
@@ -615,71 +865,146 @@
                                                 <h3 class="accordion-title">C 1900 по 1999 гг.</h3>
                                                 <div class="accordion-content">
                                                         <ul class="catalog-accordion-list">
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бенедетто ди
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бенедетто ди
                                                                                 Биндо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бергоньоне,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бергоньоне,
                                                                                 Амброджо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Биссоло,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Биссоло,
                                                                                 Франческо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Больтраффио,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Больтраффио,
                                                                                 Джованни</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бонсиньори,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бонсиньори,
                                                                                 Франческо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Боттичини,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Боттичини,
                                                                                 Рафаэлло</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Брамантино</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Брамантино</a>
                                                                 </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бреа,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бреа,
                                                                                 Людовико</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бьяджо
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бьяджо
                                                                                 д’Антонио Туччи</a></li>
+
+
+
                                                         </ul>
                                                 </div>
 
                                                 <h3 class="accordion-title">C 2000 г.</h3>
                                                 <div class="accordion-content">
                                                         <ul class="catalog-accordion-list">
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бенедетто
-                                                                                ди
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бенедетто ди
                                                                                 Биндо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бергоньоне,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бергоньоне,
                                                                                 Амброджо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Биссоло,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Биссоло,
                                                                                 Франческо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Больтраффио,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Больтраффио,
                                                                                 Джованни</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бонсиньори,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бонсиньори,
                                                                                 Франческо</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Боттичини,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Боттичини,
                                                                                 Рафаэлло</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Брамантино</a>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Брамантино</a>
                                                                 </li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бреа,
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бреа,
                                                                                 Людовико</a></li>
-                                                                <li class="accordion-list-item"> <a href="#"
-                                                                                class="accordion-list-link">Бьяджо
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Бьяджо
                                                                                 д’Антонио Туччи</a></li>
+
+
+
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Парентино,
+                                                                                Бернардо</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пезеллино</a>
+                                                                </li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пьетро
+                                                                                Перуджино</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Перуцци,
+                                                                                Бальдассаре</a></li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пизанелло</a>
+                                                                </li>
+                                                                <li class="accordion-list-item"> <a
+                                                                                href="#catalog-main-left"
+                                                                                class="accordion-list-link"
+                                                                                onmousedown="accordion()">Пинтуриккьо</a>
+                                                                </li>
                                                         </ul>
                                                 </div>
                                         </div>
                                 </div>
+                        </div>
+
+                        <div class="catalog-main2" id="catalog-main2">
+                                <div class="test"></div>
                         </div>
                 </section>
 
@@ -1094,7 +1419,8 @@
                                                                         <label for="check25" class="choice-item-label">
                                                                                 <input type="checkbox"
                                                                                         class="categories-choice-input"
-                                                                                        name="check" id="check25">Бестселлеры
+                                                                                        name="check"
+                                                                                        id="check25">Бестселлеры
                                                                                 <span
                                                                                         class="categories-choice-customcheck"></span>
                                                                         </label>
@@ -1103,7 +1429,8 @@
                                                                         <label for="check26" class="choice-item-label">
                                                                                 <input type="checkbox"
                                                                                         class="categories-choice-input"
-                                                                                        name="check" id="check26">Искусство
+                                                                                        name="check"
+                                                                                        id="check26">Искусство
                                                                                 <span
                                                                                         class="categories-choice-customcheck"></span>
                                                                         </label>
@@ -1112,7 +1439,8 @@
                                                                         <label for="check27" class="choice-item-label">
                                                                                 <input type="checkbox"
                                                                                         class="categories-choice-input"
-                                                                                        name="check" id="check27">Архитектура
+                                                                                        name="check"
+                                                                                        id="check27">Архитектура
                                                                                 <span
                                                                                         class="categories-choice-customcheck"></span>
                                                                         </label>
@@ -1126,8 +1454,8 @@
                                                                                         class="categories-choice-customcheck"></span>
                                                                         </label>
                                                                 </li>
-                                                        
-                                                        
+
+
                                                                 <li class="categories-choice-item">
                                                                         <label for="check29" class="choice-item-label">
                                                                                 <input type="checkbox"
@@ -1161,18 +1489,20 @@
                                                                         <label for="check32" class="choice-item-label">
                                                                                 <input type="checkbox"
                                                                                         class="categories-choice-input"
-                                                                                        name="check" id="check32">Публицистика
+                                                                                        name="check"
+                                                                                        id="check32">Публицистика
                                                                                 <span
                                                                                         class="categories-choice-customcheck"></span>
                                                                         </label>
                                                                 </li>
-                                                        
-                                                        
+
+
                                                                 <li class="categories-choice-item">
                                                                         <label for="check33" class="choice-item-label">
                                                                                 <input type="checkbox"
                                                                                         class="categories-choice-input"
-                                                                                        name="check" id="check33">Путеводители
+                                                                                        name="check"
+                                                                                        id="check33">Путеводители
                                                                                 <span
                                                                                         class="categories-choice-customcheck"></span>
                                                                         </label>
@@ -1181,7 +1511,8 @@
                                                                         <label for="check34" class="choice-item-label">
                                                                                 <input type="checkbox"
                                                                                         class="categories-choice-input"
-                                                                                        name="check" id="check34">Философия
+                                                                                        name="check"
+                                                                                        id="check34">Философия
                                                                                 <span
                                                                                         class="categories-choice-customcheck"></span>
                                                                         </label>
@@ -1190,7 +1521,8 @@
                                                                         <label for="check35" class="choice-item-label">
                                                                                 <input type="checkbox"
                                                                                         class="categories-choice-input"
-                                                                                        name="check" id="check35">Учебная
+                                                                                        name="check"
+                                                                                        id="check35">Учебная
                                                                                 литература
                                                                                 <span
                                                                                         class="categories-choice-customcheck"></span>
@@ -1200,7 +1532,8 @@
                                                                         <label for="check36" class="choice-item-label">
                                                                                 <input type="checkbox"
                                                                                         class="categories-choice-input"
-                                                                                        name="check" id="check36">Журналы и
+                                                                                        name="check"
+                                                                                        id="check36">Журналы и
                                                                                 газеты
                                                                                 <span
                                                                                         class="categories-choice-customcheck"></span>
@@ -1442,19 +1775,148 @@
                         </div>
                 </section>
 
+                <section class="progects container" id="progects">
+                        <h2 class="Title">Проекты</h2>
+                        <p class="progects-description">Предварительные выводы: постоянное
+                                информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует
+                                необходимость своевременного выполнения сверхзадачи. А ещё независимые государства
+                                смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего
+                                возрастает их статус бесполезности. Прежде всего, постоянное
+                                информационно-пропагандистское <span class="progects-description-tooltip">
+                                        <span class="progects-tooltip-content">
+                                                Пример современных тенденций - современная методология разработки
+                                        </span>
+                                </span>
+                                обеспечение нашей деятельности однозначно фиксирует необходимость экономической
+                                целесообразности принимаемых решений. И нет сомнений, что действия представителей
+                                оппозиции могут быть рассмотрены <span class="progects-description-tooltip">
+                                        <span class="progects-tooltip-content">
+                                                Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы
+                                                вызывают у вас эмоции
+                                        </span>
+                                </span>
+                                исключительно в разрезе маркетинговых и финансовых <span
+                                        class="progects-description-tooltip">
+                                        <span class="progects-tooltip-content">
+                                                В стремлении повысить качество
+                                        </span>
+                                </span> предпосылок. Банальные, но
+                                неопровержимые выводы, а также представители современных социальных резервов призывают
+                                нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными
+                                данными до степени совершенной неузнаваемости. Подробнее:
+                                <a href="#" class="progects-description-link">blanchard-art.ru/projects/about</a>
+                        </p>
+
+                        <p class="progects-slider-title">Партнёры проектов:</p>
+
+                        <div class="partners">
+
+                                <div class="progects-swiper-prev"></div>
+                                <div class="swiper-container progects-swiper">
+
+
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper progects-wrapper">
+                                                <!-- Slides -->
+                                                <div class="swiper-slide progects-slide progects-slide1"></div>
+                                                <div class="swiper-slide progects-slide progects-slide2"></div>
+                                                <div class="swiper-slide progects-slide progects-slide3"></div>
+                                                <div class="swiper-slide progects-slide progects-slide4"></div>
+                                                <div class="swiper-slide progects-slide progects-slide5"></div>
+                                                <div class="swiper-slide progects-slide progects-slide6"></div>
+                                                <div class="swiper-slide progects-slide progects-slide7"></div>
+                                                <div class="swiper-slide progects-slide progects-slide8"></div>
+                                                <div class="swiper-slide progects-slide progects-slide9"></div>
+                                        </div>
+
+                                </div>
+                                <div class="progects-swiper-next"></div>
+                        </div>
+
+                </section>
+
+                <section class="contacts" id="contacts">
+                        <h2 class="Title container">Контакты</h2>
+                        <div class="contacts-content">
+                                <div class="contacts-content-left">
+                                        
+                                                <div class="contacts-adress container">
+                                                        <p class="contacts-showroom">
+                                                                Шоурум №4
+                                                        </p>
+                                                        <p class="contacts-showroom contacts-showroom-mobile">
+                                                                Шоурум №2
+                                                        </p>
+
+                                                        <p class="contacts-showroom-adress">Леонтьевский переулок, дом
+                                                                5, строение 1</p>
+
+                                                        <p class="contacts-showroom-adress contacts-adress-mobile" > Покровский бульвар, дом 24, строение 3</p>
+
+                                                        <p class="contacts-call">Заказать обратный звонок</p>
+
+                                                        <form action="https://jsonplaceholder.typicode.com/posts"
+                                                                method="POST" class="contacts-form" id="contacts-form">
+                                                                <input type="text" required name="Name"
+                                                                        placeholder="Имя*" class="contacts-form-input">
+                                                                <input type="tel" required name="tel"
+                                                                        placeholder="Телефон*"
+                                                                        class="contacts-form-input">
+
+                                                        </form>
+                                                        <button type="submit" form="contacts-form"
+                                                                class="contacts-form-btn">Заказать</button>
+                                                        <div class="contacts-oneclick">
+                                                                <p class="contacts-oneclick-title">Связаться в один клик
+                                                                </p>
+                                                                <div class="contacts-oneclick-socials">
+                                                                        <div class="whatsapp">
+
+                                                                        </div>
+                                                                        <div class="telegram">
+
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        
+                                </div>
+                                <div class="contacts-content-right" id="map">
+
+                                        <p class="contacts-showroom contacts-showroom-mobile320">
+                                                Шоурум №2
+                                        </p>
+
+                                        <p class="contacts-showroom-adress contacts-adress-mobile320" > Покровский бульвар, дом 24, строение 3</p>
+
+                                </div>
+                        </div>
+                </section>
+
         </main>
 
         <footer>
+                <div class="footer container">
+                        <a href="#" class="footer-logo"> <img src="img/footer-logo.png" alt="футер-лого" class="footer-logo-img"></a>
 
+                        <div class="footer-social">
+                                <ul class="footer-social-list">
+                                        <li class="footer-social-items"><a href="#" class="footer-social-link"><img src="img/footer-vk.svg" alt="vk"></a></li>
+                                        <li class="footer-social-items"><a href="#" class="footer-social-link"><img src="img/footer-insta.svg" alt="instagarm"></a></li>
+                                        <li class="footer-social-items"><a href="#" class="footer-social-link"><img src="img/footer-fb.svg" alt="facebook"></a></li>
+                                </ul>
+                        </div>
+                </div>
         </footer>
         <script src="scroll/simplebar.min.js"></script>
         <script src="index.js"></script>
+
+        <!--Accordion-->
         <script>
                 $(function () {
                         $("#accordion").accordion();
                 });
         </script>
-
 
 </body>
 
