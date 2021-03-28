@@ -161,15 +161,25 @@ var prSwiper = new Swiper('.progects-swiper', {
 
 
 //scroll
-new SimpleBar(document.getElementById('realizm'));
+new SimpleBar(document.getElementById('realizm'), {
+    scrollbarMaxSize:28,
+});
 
-new SimpleBar(document.getElementById('impresion'));
+new SimpleBar(document.getElementById('impresion'),{
+    scrollbarMaxSize:28,
+});
 
-new SimpleBar(document.getElementById('postmodern'));
+new SimpleBar(document.getElementById('postmodern'),{
+    scrollbarMaxSize:28,
+});
 
-new SimpleBar(document.getElementById('avangard'));
+new SimpleBar(document.getElementById('avangard'),{
+    scrollbarMaxSize:28,
+});
 
-new SimpleBar(document.getElementById('future'));
+new SimpleBar(document.getElementById('future'),{
+    scrollbarMaxSize:28,
+});
 
 //burger open
 function burger() {

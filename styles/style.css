@@ -517,13 +517,12 @@ ul {
 
 .simplebar-scrollbar {
     background-color: var(--main);
-    max-height: 28px;
     max-width: 2px;
+   
     
 }
 
 .simplebar-track {
-    
     background-color: black;
     max-width: 2px;
 }
@@ -2353,6 +2352,10 @@ footer {
         top:30%;
     }
 
+    .enter:focus::before {
+        outline: none;
+    }
+
 
     .search-adaptive{
         margin-top: 6px;
@@ -3380,6 +3383,10 @@ footer {
 
     .contacts-form-input {
         max-width: 100%;
+    }
+
+    #map {
+        height: 400px;
     }
 
     .footer {
