@@ -303,11 +303,124 @@ function init() {
     myMap.controls.remove('typeSelector');
     myMap.controls.remove('fullscreenControl');
 
-
-    
-
     
 }
+
+//gallery-modal
+
+function modalCloser() {
+    document.getElementById("modal1").style.display = "none";
+    document.getElementById("modal2").style.display = "none";
+    document.getElementById("modal3").style.display = "none";
+    document.getElementById("modal4").style.display = "none";
+    document.getElementById("modal5").style.display = "none";
+    document.getElementById("modal6").style.display = "none";
+    document.getElementById("modal7").style.display = "none";
+    document.getElementById("modal8").style.display = "none";
+    document.getElementById("modal9").style.display = "none";
+    document.getElementById("modal10").style.display = "none";
+    document.getElementById("modal11").style.display = "none";
+    document.getElementById("modal12").style.display = "none";
+    document.getElementById("modal13").style.display = "none";
+    document.getElementById("modal14").style.display = "none";
+    document.getElementById("modal15").style.display = "none";
+    document.getElementById("modal16").style.display = "none";
+    document.getElementById("modal17").style.display = "none";
+    document.getElementById("modal18").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+
+};
+
+function slide1() {
+    document.getElementById("modal1").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+function slide2() {
+    document.getElementById("modal2").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+function slide3() {
+    document.getElementById("modal3").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+function slide4() {
+    document.getElementById("modal4").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+function slide5() {
+    document.getElementById("modal5").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+function slide6() {
+    document.getElementById("modal6").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+function slide7() {
+    document.getElementById("modal7").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+function slide8() {
+    document.getElementById("modal8").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+function slide9() {
+    document.getElementById("modal9").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+function slide10() {
+    document.getElementById("modal10").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+
+function slide11() {
+    document.getElementById("modal11").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+function slide12() {
+    document.getElementById("modal12").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+function slide13() {
+    document.getElementById("modal13").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+function slide14() {
+    document.getElementById("modal14").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+function slide15() {
+    document.getElementById("modal15").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+function slide16() {
+    document.getElementById("modal16").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+function slide17() {
+    document.getElementById("modal17").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
+
+function slide18() {
+    document.getElementById("modal18").style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+};
 
 
 

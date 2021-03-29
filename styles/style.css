@@ -814,6 +814,10 @@ ul {
     background-color: rgba(194, 131, 243, 0.4);   
 }
 
+.gallery-wrapper {
+    z-index: 0;
+}
+
 .gallery-slide-1 {
     background-image: url('../img/gallary-slide-1.png');
     background-repeat: no-repeat;
@@ -919,6 +923,167 @@ ul {
 .gallery-slide-18 {
     background-image: url('../img/gallary-slide-18.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal {
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    border: 2px solid var(--main);
+    padding: 10px;
+    display: none;
+    z-index: 20;
+   
+}
+
+
+.modal_cross {
+    background: url('../img/closer-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    
+}
+
+.text {
+    align-self: flex-end;
+    font-family: 'Open Sans Semi-bold';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--text);
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    z-index: 1;
+    display: none;
+   
+}
+
+#modal1 {
+    background: url('../img/gallary-slide-1.png');
+    background-repeat: repeat;
+    background-size: cover;
+    
+}
+
+#modal2 {
+    background: url('../img/gallary-slide-2.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#modal3 {
+    background: url('../img/gallary-slide-3.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#modal4 {
+    background: url('../img/gallary-slide-4.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#modal5 {
+    background: url('../img/gallary-slide-5.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#modal6 {
+    background: url('../img/gallary-slide-6.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#modal7 {
+    background: url('../img/gallary-slide-7.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#modal8 {
+    background: url('../img/gallary-slide-8.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#modal9 {
+    background: url('../img/gallary-slide-9.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#modal10 {
+    background: url('../img/gallary-slide-10.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#modal11 {
+    background: url('../img/gallary-slide-11.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#modal12 {
+    background: url('../img/gallary-slide-12.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#modal13 {
+    background: url('../img/gallary-slide-13.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#modal14 {
+    background: url('../img/gallary-slide-14.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#modal15 {
+    background: url('../img/gallary-slide-15.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#modal16 {
+    background: url('../img/gallary-slide-16.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#modal17 {
+    background: url('../img/gallary-slide-17.png');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#modal18 {
+    background: url('../img/gallary-slide-18.png');
+    background-repeat: repeat;
     background-size: cover;
 }
 
@@ -1540,6 +1705,7 @@ ul {
     flex: 1 1 71%;
     margin-left: 103px;
     padding-left: 5px;
+    z-index: 0;
 }
 
 .books-slides-mobile {
@@ -1579,6 +1745,8 @@ ul {
      outline: none;
      background-image: url("../img/gallary-next-focus.svg");
  }
+
+
 
 .books-slide-pic1 {
     background-image: url('../img/books-pic1.jpg');
@@ -1777,6 +1945,7 @@ ul {
 
 .progects-swiper {
     flex: 1 1 80%;
+    z-index: 0;
     
 }
 
@@ -1810,6 +1979,8 @@ ul {
     outline: none;
     background-image: url('../img/gallary-next-focus.svg');
 }
+
+
 
 .progects-slide {
     min-width: 450px;
@@ -3125,6 +3296,16 @@ footer {
         border: none;
     }
 
+    .modal {
+        width: 100%;
+        
+    }
+
+    .text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
     .swiper-paginationg {
         max-width: 69px;
         text-align: center;
@@ -3192,6 +3373,7 @@ footer {
         display: block;
         max-width: 100%;
         height: 720px;
+        z-index: 0;
     }
 
     .events-wrapper {
