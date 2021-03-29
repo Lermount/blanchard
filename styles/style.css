@@ -927,15 +927,14 @@ ul {
 }
 
 .modal {
-    width: 500px;
+    width: 900px;
     height: 500px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 20;
-    border: 2px solid var(--main);
-    padding: 10px;
+    background: white;
     display: none;
     z-index: 20;
    
@@ -943,11 +942,11 @@ ul {
 
 
 .modal_cross {
-    background: url('../img/closer-mobile.svg');
+    background: url('../img/modal-closer.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -955,16 +954,6 @@ ul {
     
 }
 
-.text {
-    align-self: flex-end;
-    font-family: 'Open Sans Semi-bold';
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 32px;
-    color: var(--text);
-    background-color: rgba(0, 0, 0, 0.25);
-    z-index: 10;
-}
 
 .overlay {
     position: fixed;
@@ -978,113 +967,180 @@ ul {
    
 }
 
-#modal1 {
+.modal-left {
+    flex: 1 1 45%;
+}
+
+.modal-right {
+    flex: 1 1 55%;
+    align-self: center;
+    padding-left: 49px;
+}
+
+.painter {
+    margin: 0;
+    font-family: 'Open Sans Semi-bold';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
+}
+
+.name-pic {
+    margin: 0;
+    font-family: 'Open Sans Semi-bold';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;  
+    color: #333333;
+}
+
+.years {
+    margin: 0;
+    font-family: 'Open Sans Regular';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #969696;
+
+}
+
+.modal-description {
+    margin-top: 41px;
+    max-width: 401px;
+    font-family: 'Open Sans Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+}
+
+
+.modal-left1 {
     background: url('../img/gallary-slide-1.png');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
     
 }
 
-#modal2 {
+.modal-left2 {
     background: url('../img/gallary-slide-2.png');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#modal3 {
+.modal-left3 {
     background: url('../img/gallary-slide-3.png');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#modal4 {
+.modal-left4 {
     background: url('../img/gallary-slide-4.png');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#modal5 {
+.modal-left5 {
     background: url('../img/gallary-slide-5.png');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#modal6 {
+.modal-left6{
     background: url('../img/gallary-slide-6.png');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#modal7 {
+.modal-left7 {
     background: url('../img/gallary-slide-7.png');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#modal8 {
+.modal-left8 {
     background: url('../img/gallary-slide-8.png');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#modal9 {
+.modal-left9 {
     background: url('../img/gallary-slide-9.png');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#modal10 {
+.modal-left10 {
     background: url('../img/gallary-slide-10.png');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#modal11 {
+.modal-left11 {
     background: url('../img/gallary-slide-11.png');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#modal12 {
+.modal-left12 {
     background: url('../img/gallary-slide-12.png');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#modal13 {
+.modal-left13 {
     background: url('../img/gallary-slide-13.png');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#modal14 {
+.modal-left14 {
     background: url('../img/gallary-slide-14.png');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#modal15 {
+.modal-left15 {
     background: url('../img/gallary-slide-15.png');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#modal16 {
+.modal-left16 {
     background: url('../img/gallary-slide-16.png');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#modal17 {
-    background: url('../img/gallary-slide-17.png');
+.modal-left17 {
+    background: url('../img/gallary-slide-17.jpg');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
-#modal18 {
-    background: url('../img/gallary-slide-18.png');
+.modal-left18 {
+    background: url('../img/gallary-slide-18.jpg');
     background-repeat: repeat;
     background-size: cover;
+    background-position: center;
 }
 
 /*Catalog*/
@@ -2622,6 +2678,14 @@ footer {
         height: 280px;
     }
 
+    .modal {
+        width: 594px;
+        height: 594px;
+    }
+
+    .modal-description {
+        max-width: 230px;
+    }
     
     .language {
         margin-bottom: 0;
@@ -2988,6 +3052,16 @@ footer {
      max-width: 317px;
     }
 
+    .modal {
+        width: 668px;
+        height: 594px;
+    }
+
+    .modal-description {
+        width: 281px;
+       
+    }
+
     .gallery-select-description_mobile {
         margin-top: 31px;
         margin-left: 5px;
@@ -3297,8 +3371,23 @@ footer {
     }
 
     .modal {
-        width: 100%;
-        
+        width: 90%;
+        flex-wrap: wrap;   
+    }
+
+    .modal-left {
+        flex: 1 1 100%;
+        height: 300px;
+    }
+
+    .modal-right {
+        flex: 1 1 100%;
+        padding-left: 20px;
+    }
+
+    .modal-description {
+        margin: 0;
+        max-width: 320px;
     }
 
     .text {
@@ -3790,6 +3879,28 @@ footer {
     .gallery-select-description_mobile {
       margin-top: 19px;
       margin-left: 7px;
+    }
+
+    .modal {
+        top: 53%;
+        height: 600px;
+        width: 290px;  
+    }
+
+    .modal-left {
+        flex: 1 1 100%;
+        height: 200px;
+    }
+
+    .modal-right {
+        flex: 1 1 100%;
+        padding-left: 20px;
+        align-self: flex-start;
+    }
+
+    .modal-description {
+        margin-top: 12px;
+        max-width: 249px;
     }
 
     .title-and-language {
